@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<!--
+	Standout by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html lang="srb">
+
+<head>
+	<title>Untitled</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="language.js"></script>
+</head>
+
+<body class="is-preload">
+	<!-- <div id="videoCover"></div>
+	<div id="videoCoverText">
+		<h2>NAA <span>STUDIO</span></h2>
+	</div> -->
+	<!-- <video id="fullscreenVideo" autoplay muted>
+		<source src="splashvideo.mp4" type="video/mp4">
+	</video> -->
+	<!-- Page wrapper -->
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<span class="logo"><a href="index.html">NAA<span>studio</span></a></span>
+			<div class="custom-select" id="language-selector">
+				<div class="select-selected">
+					<img src="images/srbflag.png" alt="SRB"> SRB
+				</div>
+				<div class="select-items">
+					<div onclick="changeLanguage('srb')"><img src="images/srbflag.png" alt="SRB"> SRB</div>
+					<div onclick="changeLanguage('en')"><img src="images/enflag.png" alt="EN"> EN</div>
+					<div onclick="changeLanguage('esp')"><img src="images/espflag.png" alt="ESP"> ESP</div>
+					<!-- Add more options for other languages -->
+				</div>
+			</div>
+
+			<a class="menu-a" href="#menu"></a>
+		</header>
+
+		<!-- Nav -->
+		<nav id="menu">
+			<div class="inner">
+				<ul class="links">
+					<li><a href="index.html" data-translate="home">Home</a>
+						<div class="menu-of">
+							<img src="assets/css/navstroke.png" />
+						</div>
+					</li>
+					<li><a href="portfolio.html" data-translate="portfolio">Portfolio</a>
+						<div class="menu-of">
+							<img src="assets/css/navstroke.png" />
+						</div>
+					</li>
+					<li><a href="for-designers.html" data-translate="forDesigners">For Designers</a>
+						<div class="menu-of">
+							<img src="assets/css/navstroke.png" />
+						</div>
+					</li>
+					<li><a href="about-us.html" data-translate="aboutUs">About Us</a>
+						<div class="menu-of">
+							<img src="assets/css/navstroke.png" />
+						</div>
+					</li>
+					<li><a href="contact-us.html">Kontakt</a>
+						<div class="menu-of">
+							<img src="assets/css/navstroke.png" />
+						</div>
+					</li>
+				</ul>
+				<a class="close"><span>Close</span></a>
+			</div>
+		</nav>
+
+		<!-- Banner -->
+		<section id="banner">
+
+			<div class="inner">
+
+				<h1 data-translate="mainheading"></h1>
+				<div class="content">
+					<p data-translate="mainDesc">Discover the Magic of Clay: where craftsmanship meets creativity and
+						uniqueness intertwines with
+						lighting fixtures, creating extraordinary chandeliers.</p>
+					<ul class="actions special">
+						<li><a href="portfolio.html" class="button next alt large-btn"
+								data-translate="portfolio">portfolio</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="bg-video">
+				<div id="hero-section">
+					<video id="video-player" width="100%" height="auto" autoplay muted loop playsinline>
+						<!-- Add the source of your first video -->
+						<source src="pexels2.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Footer -->
+		<section id="footer" style="background: #eeeae9" class="wrapper">
+			<div class="inner">
+				<div class="split">
+					<div class="content">
+						<header>
+							<h2 class="dark" data-translate="aboutUs">About</h2>
+						</header>
+						<p data-translate="shortStory"></p>
+						<ul class="actions">
+							<li><a href="about-us.html" class="button next alt dark" data-translate="fullStory">Full
+									Story</a></li>
+						</ul>
+					</div>
+					<ul class="contact-icons">
+						<li><a href="#" class="icon solid alt fa-envelope"><span
+									class="label">info@naa-studio.com</span></a></li>
+						<li><a href="https://www.instagram.com/_naa_studio/" class="icon brands alt fa-instagram"><span
+									class="label">@_naa_studio</span></a></li>
+						<li><a href="#" class="icon brands fa-linkedin"><span class="label">@_naa_studio</span></a></li>
+						<li><a href="#" class="icon brands alt fa-facebook-f"><span
+									class="label">@_naa_studio</span></a></li>
+						<li><a href="#" class="icon brands alt fa-behance"><span class="label">@_naa_studio</span></a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- Copyright -->
+		<section class="wrapper style2 copyright small-footer">
+			<div class="inner" data-translate="allRights">
+			</div>
+		</section>
+
+	</div>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			var video = document.getElementById('fullscreenVideo');
+
+			// Set the current time to 3 seconds
+			video.currentTime = 6;
+
+			// Pause the video initially
+			video.pause();
+
+			// Wait for 1 second before playing
+			setTimeout(function () {
+				// Play the video
+				video.play();
+				document.getElementById('videoCover').remove();
+			}, 2000);
+
+			setTimeout(function () {
+				// Play the video
+
+				document.getElementById('videoCoverText').style.opacity = '1';
+			}, 7500);
+
+			setTimeout(function () {
+				// Play the video
+				video.remove();
+				document.getElementById('videoCoverText').remove();
+			}, 13000);
+		});
+	</script>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

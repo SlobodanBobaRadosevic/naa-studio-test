@@ -1,0 +1,14 @@
+.gallery a,
+.gallery span {
+  margin: 0 !important;
+}
+
+.wrapper {
+  padding: 0 !important;
+}
+
+.gallery {
+    margin: 0 !important;
+}
+
+

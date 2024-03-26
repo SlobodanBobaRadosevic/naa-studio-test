@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Define max image width and height */
+:root {
+  --max-img-width: 600px;
+  --max-img-height: 400px;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.gallery {
+  display: flex;
+  position: relative;
+  padding-top: 820px;
+}
+.gallery img.gallery__img {
+  width: 100%;
+}
+.gallery__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.gallery__thumb {
+  padding-top: 6px;
+  display: block;
+  cursor: pointer;
+}
+
+.gallery__selector {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.gallery__selector:checked + .gallery__img {
+  opacity: 1;
+}
+
+.gallery__selector:checked ~ .gallery__thumb > img {
+  box-shadow: 0 0 0 3px #f6ce0b;
+}
+
+@media screen and (min-width: 1280px) {
+  .gallery {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
