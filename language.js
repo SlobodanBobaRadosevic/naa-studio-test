@@ -130,6 +130,10 @@ document.addEventListener("DOMContentLoaded", function () {
       aboutUs10: "Umetnost kroz vekove",
       aboutUs11:
         "Kroz naše lustere, prenosimo duh i lepotu prošlih vremena, istovremeno stvarajući jedinstvena umetnička dela koja odražavaju savremene trendove i estetiku. Na taj način, povezujemo prošlost i sadašnjost, stvarajući harmoniju između tradicije, umetnosti i modernosti.",
+      name: "Ime i Prezime",
+      email: "e-pošta",
+      message: "Poruka",
+      send: "Pošalji",
     },
 
     en: {
@@ -250,6 +254,10 @@ document.addEventListener("DOMContentLoaded", function () {
       aboutUs10: "Art Through the Ages",
       aboutUs11:
         "Through our chandeliers, we convey the spirit and beauty of bygone eras, while simultaneously creating unique works of art that reflect contemporary trends and aesthetics. In doing so, we bridge the past and present, creating harmony between tradition, art, and modernity.",
+      name: "First and Last Name",
+      email: "Email",
+      message: "Message",
+      send: "Send",
     },
     esp: {
       mainheading: "Arte moderno crudo",
@@ -369,6 +377,10 @@ document.addEventListener("DOMContentLoaded", function () {
       aboutUs10: "Arte a Través de las Edades",
       aboutUs11:
         "A través de nuestras lámparas de araña, transmitimos el espíritu y la belleza de épocas pasadas, al mismo tiempo que creamos obras de arte únicas que reflejan las tendencias y estéticas contemporáneas. Al hacerlo, unimos el pasado y el presente, creando armonía entre tradición, arte y modernidad.",
+      name: "Nombre y Apellido",
+      email: "Correo electrónico",
+      message: "Mensaje",
+      send: "Enviar",
     },
     // Add translations for other languages here
   };

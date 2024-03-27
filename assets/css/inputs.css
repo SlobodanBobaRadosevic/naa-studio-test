@@ -1,0 +1,95 @@
+.formRow {
+    position: relative;
+    width: 100%;
+  }
+  
+  .formRow--item {
+    display: block;
+    width: 100%;
+  }
+  
+  .formRow--input {
+    position: relative;
+    padding: 15px 20px 11px;
+    width: 100%;
+    outline: none;
+    border: solid 1px rgba(99, 116, 133, 0.25);
+    border-radius: 10px;
+    color: rgb(44, 50, 53);
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    font-size: 16px;
+    resize: none;
+    transition: all 0.2s ease;
+  }
+  
+  .formRow--input-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+  
+  .formRow--input-wrapper.active .placeholder {
+    top: -5px;
+    background-color: #eeeae9;
+    color: #000;
+    letter-spacing: 0.8px;
+    font-size: 11px;
+    line-height: 14px;
+    transform: translateY(0);
+  }
+  
+  .formRow--input-wrapper.active
+    .formRow--input:not(:focus):not(:hover)
+    ~ .placeholder {
+    color: #fec8c9;
+  }
+  
+  .formRow--input:focus,
+  .formRow--input:hover {
+    border-color: gray;
+  }
+  
+  .placeholder {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    display: block;
+    padding: 0 10px;
+    color: rgb(149, 152, 154);
+    white-space: nowrap;
+    letter-spacing: 0.2px;
+    font-weight: normal;
+    font-size: 16px;
+    transition: all 0.2s;
+    transform: translateY(-50%);
+    pointer-events: none;
+    user-select: none;
+  }
+  
+  .v1 .formRow--input {
+    background-color: #eeeae9;
+    border-radius: 0;
+    border: 2px solid rgb(149, 152, 154);
+  }
+  
+  .v1 .formRow--input:focus {
+    border-color: black;
+    box-shadow: none;
+  }
+  
+  .v1 .formRow--input-wrapper.active .placeholder {
+    background-color: #eeeae9;
+    color: #000;
+  }
+  
+  .v1
+    .formRow--input-wrapper.active
+    .formRow--input:not(:focus):not(:hover)
+    ~ .placeholder {
+    color: rgb(149, 152, 154);
+  }
+  
+  input[type="text"], input[type="password"], input[type="email"], select, textarea {
+    background-color: #eeeae9;
+  }

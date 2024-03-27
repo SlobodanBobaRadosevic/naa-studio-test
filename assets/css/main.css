@@ -2415,7 +2415,7 @@ input[type="password"]:focus,
 input[type="email"]:focus,
 select:focus,
 textarea:focus {
-  border-color: #000000;
+  border-color: #000000 !important;
   box-shadow: 0 0 0 1px #000000;
 }
 
@@ -5063,8 +5063,15 @@ a.button.next.alt {
 a.button.next.alt.dark {
   color: #333 !important;
 }
+button.button.next.alt.dark {
+  color: #333 !important;
+}
 
 a.button.next.alt.dark::after {
+  filter: invert();
+}
+
+button.button.next.alt.dark::after {
   filter: invert();
 }
 
@@ -5799,4 +5806,93 @@ button .fas {
 
 .dark-mode .content-desc a {
   color: #a3a3a3;
+}
+
+.contact-holder {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-20%, -50%);
+  width: 30%;
+  padding: 15px;
+}
+
+.background-holder {
+  background-image: url(../../images/Samuraj/04a.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: center;
+  animation: filterCycle 15s infinite;
+}
+
+@keyframes filterCycle {
+  0%,
+  100% {
+    filter: grayscale(0%) brightness(1);
+  }
+  50% {
+    filter: grayscale(100%) brightness(0.7);
+  }
+}
+
+.contact-holder .inner {
+  background-color: #eeeae9;
+  padding: 35px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 9px 32px -3px rgba(0, 0, 0, 0.62);
+  -moz-box-shadow: 0px 9px 32px -3px rgba(0, 0, 0, 0.62);
+  box-shadow: 0px 9px 32px -3px rgba(0, 0, 0, 0.62);
+  padding-top: 50px;
+}
+
+.contact-holder .inner form {
+  margin: 0;
+}
+
+@media screen and (max-width: 1350px) {
+  .contact-holder {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-20%, -50%);
+    width: 40%;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .contact-holder {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .contact-holder {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    width: 70%;
+    padding: 15px;
+  }
+  .background-holder {
+    background-position: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-holder {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    width: 90%;
+    padding: 15px;
+  }
 }
