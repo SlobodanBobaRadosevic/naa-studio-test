@@ -1,12 +1,65 @@
+<!-- form.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Form</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-   <h1>Thank you</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Embedded Form</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/about-us.css" />
+    <link rel="stylesheet" href="assets/css/gallery.css" />
+    <link rel="stylesheet" href="assets/css/carousel.css" />
+    <link rel="stylesheet" href="assets/css/inputs.css" />
+    <!-- Any additional CSS or stylesheets can be included here -->
+  </head>
+  <body>
+    <div class="custom-select" id="language-selector" style="display: none">
+      <div class="select-selected">
+        <img src="images/srbflag.png" alt="SRB" /> SRB
+      </div>
+      <div class="select-items">
+        <div onclick="changeLanguage('srb')">
+          <img src="images/srbflag.png" alt="SRB" /> SRB
+        </div>
+        <div onclick="changeLanguage('en')">
+          <img src="images/enflag.png" alt="EN" /> EN
+        </div>
+        <div onclick="changeLanguage('esp')">
+          <img src="images/espflag.png" alt="ESP" /> ESP
+        </div>
+        <!-- Add more options for other languages -->
+      </div>
+    </div>
+    <div style="text-align: center;">
+      <h1
+        style="
+          font-weight: 500;
+          font-size: 32px;
+        "
+      >
+        Uspešno!
+        <i style="color: rgb(12, 182, 12)" class="fas fa-check-circle"></i>
+      </h1>
+      <h4>Hvala Vam na interesovanju!</h4>
+      <h4>Primili smo vasu poruku i potrudicemo se da odgovorimo u najkracem mogucem roku.</h4>
+      <a
+          style="font-size: 14px"
+          class="button next alt dark"
+          data-translate="close"
+          href="form.html"
+        >
+          U redu
+    </a>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/inputs.js"></script>
+    <script src="assets/js/typing-animation.js"></script>
+    <script src="language.js"></script>
+  </body>
 </html>

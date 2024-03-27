@@ -91,7 +91,7 @@
 		  }
 		}
 	  } else {
-		console.error('Video player element not found on this page.');
+		console.log('Video player element not found on this page.');
 	  }
 
 	// Gallery.
@@ -316,12 +316,6 @@
 						$menu._hide();
 
 			});
-
-	// Tabs.
-		$('.tabs').selectorr({
-			titleSelector: 'h3',
-			delay: 250
-		});
 
 })(jQuery);
 
