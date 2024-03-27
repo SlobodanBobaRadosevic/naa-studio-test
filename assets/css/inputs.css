@@ -42,7 +42,7 @@
   .formRow--input-wrapper.active
     .formRow--input:not(:focus):not(:hover)
     ~ .placeholder {
-    color: #fec8c9;
+    color: #000;
   }
   
   .formRow--input:focus,

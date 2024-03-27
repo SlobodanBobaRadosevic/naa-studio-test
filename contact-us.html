@@ -76,7 +76,7 @@
               <div class="formRow--item">
                 <label for="name" class="formRow--input-wrapper js-inputWrapper">
                   <input type="text" name="name" required class="formRow--input js-input" id="name" autocomplete="off"
-                    placeholder="&nbsp;" />
+                    placeholder="&nbsp;" required />
                   <span class="placeholder" data-translate="name" style="text-transform: lowercase;"></span>
                 </label>
               </div>
@@ -85,7 +85,7 @@
               <div class="formRow--item">
                 <label for="email" class="formRow--input-wrapper js-inputWrapper">
                   <input type="email" name="email" class="formRow--input js-input" id="email" autocomplete="off"
-                    placeholder="&nbsp;" />
+                    placeholder="&nbsp;" required />
                   <span class="placeholder" data-translate="email" style="text-transform: lowercase;"></span>
                 </label>
               </div>
@@ -94,14 +94,14 @@
               <div class="formRow--item">
                 <label for="message" class="formRow--input-wrapper js-inputWrapper">
                   <textarea type="text" name="message" class="formRow--input js-input" id="message" autocomplete="off"
-                    placeholder="&nbsp;"></textarea>
+                    placeholder="&nbsp;" required></textarea>
                   <span class="placeholder" data-translate="message" style="text-transform: lowercase;"></span>
                 </label>
               </div>
             </fieldset>
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_next" value="https://naa-studio-dev.netlify.app/thank-you.html">
-            <button type="submit" class="button next alt dark" data-translate="send">Send</button>
+            <button type="submit" style="font-size: 14px;" class="button next alt dark" data-translate="send">Send</button>
           </div>
         </form>
       </div>
