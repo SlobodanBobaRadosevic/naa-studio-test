@@ -38,32 +38,32 @@
         </header>
         <!-- Nav -->
         <nav id="menu">
-			<div class="inner">
-				<ul class="links">
-					<li><a href="index.html" data-translate="home">Home</a>
-						<div class="menu-of">
-							<img src="assets/css/navstroke.png" />
-						</div>
-					</li>
-					<li><a href="portfolio.html" data-translate="portfolio">Portfolio</a>
-						<div class="menu-of">
-							<img src="assets/css/navstroke.png" />
-						</div>
-					</li>
-					<li><a href="for-designers.html" data-translate="forDesigners">For Designers</a>
-						<div class="menu-of">
-							<img src="assets/css/navstroke.png" />
-						</div>
-					</li>
-					<li><a href="about-us.html" data-translate="aboutUs">About Us</a>
-						<div class="menu-of">
-							<img src="assets/css/navstroke.png" />
-						</div>
-					</li>
-				</ul>
-				<a class="close"><span>Close</span></a>
-			</div>
-		</nav>
+            <div class="inner">
+                <ul class="links">
+                    <li><a href="index.html" data-translate="home">Home</a>
+                        <div class="menu-of">
+                            <img src="assets/css/navstroke.png" />
+                        </div>
+                    </li>
+                    <li><a href="portfolio.html" data-translate="portfolio">Portfolio</a>
+                        <div class="menu-of">
+                            <img src="assets/css/navstroke.png" />
+                        </div>
+                    </li>
+                    <li><a href="for-designers.html" data-translate="forDesigners">For Designers</a>
+                        <div class="menu-of">
+                            <img src="assets/css/navstroke.png" />
+                        </div>
+                    </li>
+                    <li><a href="about-us.html" data-translate="aboutUs">About Us</a>
+                        <div class="menu-of">
+                            <img src="assets/css/navstroke.png" />
+                        </div>
+                    </li>
+                </ul>
+                <a class="close"><span>Close</span></a>
+            </div>
+        </nav>
         <!-- Main -->
         <section id="main" class="wrapper style1">
             <div class="inner">
@@ -84,10 +84,9 @@
                                     <img src="images/gallery/thumbs/pic01.png" alt="#" />
                                 </div>
                                 <div class="text-right flex-btns">
-                                    <a href="download/Ideja.rar" download>
+                                    <a class="downloadLink" href="download/Ideja.rar" download>
                                         <button class="f-d-dl"><i class="fa fa-download" aria-hidden="true"></i> <span
-                                                data-translate="download">Preuzmi</span>
-                                        </button>
+                                                data-translate="download">Preuzmi</span></button>
                                     </a>
                                     <button onclick="smoothScroll('previewItem')" class="f-d-dl prev-btn"><i
                                             class="fa fa-search" aria-hidden="true"></i> <span
@@ -273,6 +272,7 @@
                     <div class="preview-item" id="previewItem">
 
                     </div>
+                    
                 </div>
 
 
@@ -281,9 +281,16 @@
 
         <!-- Copyright -->
         <section class="wrapper style2 copyright no-padding">
+            
+            <button id="setCookieBtn">Set Cookie to True</button>
             <div class="inner" data-translate="allRights"></div>
         </section>
-
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>You need to submit the form first!</p>
+            </div>
+        </div>
     </div>
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
@@ -326,6 +333,62 @@
                 });
             }
         }
+
+        function getCookie(name) {
+            const cookies = document.cookie.split(';');
+            for (let cookie of cookies) {
+                const [cookieName, cookieValue] = cookie.split('=');
+                if (cookieName.trim() === name) {
+                    return cookieValue;
+                }
+            }
+            return null;
+        }
+
+        // Function to display modal
+        function openModal() {
+            const modal = document.querySelector('.modal');
+            modal.style.display = "block";
+
+            // Close the modal when clicked anywhere outside of it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+
+            // Close the modal when clicked on close button
+            const closeBtn = modal.querySelector(".close");
+            closeBtn.onclick = function () {
+                modal.style.display = "none";
+            }
+        }
+
+        // Check if cookie exists
+        const formSubmitted = getCookie('formSubmitted');
+
+        // If cookie does not exist, prevent default action and show modal
+        const downloadLinks = document.querySelectorAll('.downloadLink');
+        downloadLinks.forEach(function (link) {
+            link.onclick = function (event) {
+                if (!formSubmitted || formSubmitted !== 'true') {
+                    event.preventDefault(); // Prevent default action (file download)
+                    openModal(); // Open modal instead
+                }
+            };
+        });
+        function setCookie(name, value, days) {
+        const date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        const expires = "expires=" + date.toUTCString();
+        document.cookie = name + "=" + value + ";" + expires + ";path=/";
+    }
+
+    // Event listener for the button click
+    document.getElementById("setCookieBtn").addEventListener("click", function() {
+        setCookie("formSubmitted", "true", 365); // Set the cookie to true for 1 year
+        alert("Cookie set to true!");
+    });
     </script>
 
 </body>
