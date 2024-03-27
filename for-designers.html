@@ -38,32 +38,32 @@
         </header>
         <!-- Nav -->
         <nav id="menu">
-			<div class="inner">
-				<ul class="links">
-					<li><a href="index.html" data-translate="home">Home</a>
-						<div class="menu-of">
-							<img src="assets/css/navstroke.png" />
-						</div>
-					</li>
-					<li><a href="portfolio.html" data-translate="portfolio">Portfolio</a>
-						<div class="menu-of">
-							<img src="assets/css/navstroke.png" />
-						</div>
-					</li>
-					<li><a href="for-designers.html" data-translate="forDesigners">For Designers</a>
-						<div class="menu-of">
-							<img src="assets/css/navstroke.png" />
-						</div>
-					</li>
-					<li><a href="about-us.html" data-translate="aboutUs">About Us</a>
-						<div class="menu-of">
-							<img src="assets/css/navstroke.png" />
-						</div>
-					</li>
-				</ul>
-				<a class="close"><span>Close</span></a>
-			</div>
-		</nav>
+            <div class="inner">
+                <ul class="links">
+                    <li><a href="index.html" data-translate="home">Home</a>
+                        <div class="menu-of">
+                            <img src="assets/css/navstroke.png" />
+                        </div>
+                    </li>
+                    <li><a href="portfolio.html" data-translate="portfolio">Portfolio</a>
+                        <div class="menu-of">
+                            <img src="assets/css/navstroke.png" />
+                        </div>
+                    </li>
+                    <li><a href="for-designers.html" data-translate="forDesigners">For Designers</a>
+                        <div class="menu-of">
+                            <img src="assets/css/navstroke.png" />
+                        </div>
+                    </li>
+                    <li><a href="about-us.html" data-translate="aboutUs">About Us</a>
+                        <div class="menu-of">
+                            <img src="assets/css/navstroke.png" />
+                        </div>
+                    </li>
+                </ul>
+                <a class="close"><span>Close</span></a>
+            </div>
+        </nav>
         <!-- Main -->
         <section id="main" class="wrapper style1">
             <div class="inner">
@@ -84,9 +84,9 @@
                                     <img src="images/gallery/thumbs/pic01.png" alt="#" />
                                 </div>
                                 <div class="text-right flex-btns">
-                                    <a href="download/Ideja.rar" download>
-                                        <button class="f-d-dl"><i class="fa fa-download" aria-hidden="true"></i> <span
-                                                data-translate="download">Preuzmi</span>
+                                    <a id="downloadLink" class="download-link" href="download/Ideja.rar" download>
+                                        <button id="downloadButton" class="f-d-dl"><i class="fa fa-download"
+                                                aria-hidden="true"></i> <span data-translate="download">Preuzmi</span>
                                         </button>
                                     </a>
                                     <button onclick="smoothScroll('previewItem')" class="f-d-dl prev-btn"><i
@@ -325,6 +325,24 @@
                     behavior: 'smooth'
                 });
             }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Check if the cookie "formSubmitted" is true
+            var formSubmitted = getCookie("formSubmitted");
+            if (formSubmitted !== "true") {
+                // Disable the download link
+                var downloadLink = document.getElementById("downloadLink");
+                downloadLink.removeAttribute("href");
+                // Show a dialog or any other message to inform the user
+                alert("Please submit the form to download the file.");
+            }
+        });
+
+        // Function to get cookie value
+        function getCookie(name) {
+            var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+            if (match) return match[2];
         }
     </script>
 
