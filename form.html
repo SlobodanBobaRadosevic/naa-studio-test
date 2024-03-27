@@ -12,18 +12,24 @@
     <link rel="stylesheet" href="assets/css/inputs.css" />
     <!-- Any additional CSS or stylesheets can be included here -->
   </head>
-  <body style="padding: 2px;">
-    <div class="custom-select" id="language-selector" style="display: none;">
-        <div class="select-selected">
-          <img src="images/srbflag.png" alt="SRB"> SRB
-        </div>
-        <div class="select-items">
-          <div onclick="changeLanguage('srb')"><img src="images/srbflag.png" alt="SRB"> SRB</div>
-          <div onclick="changeLanguage('en')"><img src="images/enflag.png" alt="EN"> EN</div>
-          <div onclick="changeLanguage('esp')"><img src="images/espflag.png" alt="ESP"> ESP</div>
-          <!-- Add more options for other languages -->
-        </div>
+  <body style="padding: 2px">
+    <div class="custom-select" id="language-selector" style="display: none">
+      <div class="select-selected">
+        <img src="images/srbflag.png" alt="SRB" /> SRB
       </div>
+      <div class="select-items">
+        <div onclick="changeLanguage('srb')">
+          <img src="images/srbflag.png" alt="SRB" /> SRB
+        </div>
+        <div onclick="changeLanguage('en')">
+          <img src="images/enflag.png" alt="EN" /> EN
+        </div>
+        <div onclick="changeLanguage('esp')">
+          <img src="images/espflag.png" alt="ESP" /> ESP
+        </div>
+        <!-- Add more options for other languages -->
+      </div>
+    </div>
     <form action="https://formsubmit.co/dev.slobodan@gmail.com" method="POST">
       <div>
         <fieldset class="formRow">
@@ -98,9 +104,11 @@
           style="font-size: 14px"
           class="button next alt dark"
           data-translate="send"
+          onclick="showLoader()"
         >
           Send
         </button>
+        <div class="loader" id="loader"></div>
       </div>
     </form>
 
@@ -114,5 +122,44 @@
     <script src="assets/js/inputs.js"></script>
     <script src="assets/js/typing-animation.js"></script>
     <script src="language.js"></script>
+    <script>
+      function showLoader() {
+        document.getElementById("loader").style.display = "block";
+      }
+    </script>
+    <style>
+      /* Add CSS for loader */
+      .loader {
+        border: 4px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 4px solid #3498db;
+        width: 50px;
+        height: 50px;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+        display: none; /* Initially hide loader */
+        position: absolute;
+        right: calc(50% - 25px);
+        top: calc(50% - 25px);
+      }
+
+      @-webkit-keyframes spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
   </body>
 </html>
