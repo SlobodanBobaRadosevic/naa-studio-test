@@ -72,39 +72,38 @@
       <div class="inner">
         <form id="myForm" action="https://formsubmit.co/dev.slobodan@gmail.com" method="POST">
           <div>
-            <fieldset class="formRow">
-              <div class="formRow--item">
-                <label for="name" class="formRow--input-wrapper js-inputWrapper">
-                  <input type="text" name="name" required class="formRow--input js-input" id="name" autocomplete="off"
-                    placeholder="&nbsp;" required />
-                  <span class="placeholder" data-translate="name" style="text-transform: lowercase;"></span>
-                </label>
-              </div>
-            </fieldset>
-            <fieldset class="formRow">
-              <div class="formRow--item">
-                <label for="email" class="formRow--input-wrapper js-inputWrapper">
-                  <input type="email" name="email" class="formRow--input js-input" id="email" autocomplete="off"
-                    placeholder="&nbsp;" required />
-                  <span class="placeholder" data-translate="email" style="text-transform: lowercase;"></span>
-                </label>
-              </div>
-            </fieldset>
-            <fieldset class="formRow">
-              <div class="formRow--item">
-                <label for="message" class="formRow--input-wrapper js-inputWrapper">
-                  <textarea type="text" name="message" class="formRow--input js-input" id="message" autocomplete="off"
-                    placeholder="&nbsp;" required></textarea>
-                  <span class="placeholder" data-translate="message" style="text-transform: lowercase;"></span>
-                </label>
-              </div>
-            </fieldset>
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://naa-studio-dev.netlify.app/thank-you.html">
-            <button id="submitButton" style="font-size: 14px;" class="button next alt dark"
-              data-translate="send">Send</button>
+              <fieldset class="formRow">
+                  <div class="formRow--item">
+                      <label for="name" class="formRow--input-wrapper js-inputWrapper">
+                          <input type="text" name="name" required class="formRow--input js-input" id="name" autocomplete="off"
+                              placeholder="&nbsp;" required />
+                          <span class="placeholder" data-translate="name" style="text-transform: lowercase;"></span>
+                      </label>
+                  </div>
+              </fieldset>
+              <fieldset class="formRow">
+                  <div class="formRow--item">
+                      <label for="email" class="formRow--input-wrapper js-inputWrapper">
+                          <input type="email" name="email" class="formRow--input js-input" id="email" autocomplete="off"
+                              placeholder="&nbsp;" required />
+                          <span class="placeholder" data-translate="email" style="text-transform: lowercase;"></span>
+                      </label>
+                  </div>
+              </fieldset>
+              <fieldset class="formRow">
+                  <div class="formRow--item">
+                      <label for="message" class="formRow--input-wrapper js-inputWrapper">
+                          <textarea type="text" name="message" class="formRow--input js-input" id="message" autocomplete="off"
+                              placeholder="&nbsp;" required></textarea>
+                          <span class="placeholder" data-translate="message" style="text-transform: lowercase;"></span>
+                      </label>
+                  </div>
+              </fieldset>
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="https://naa-studio-dev.netlify.app/thank-you.html">
+              <button id="submitButton" style="font-size: 14px;" class="button next alt dark" data-translate="send">Send</button>
           </div>
-        </form>
+      </form>
         <button id="continueButton" style="display: none;">Continue</button>
 
       </div>
@@ -160,20 +159,19 @@
     }, 2000);
   </script>
   <script>
-    window.addEventListener('beforeunload', function (event) {
-      // Display the "Continue" button
-      document.getElementById('continueButton').style.display = 'block';
-
-      // Prompt user confirmation
-      event.preventDefault();
-      event.returnValue = '';
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+        // Prevent the default form submission
+        event.preventDefault();
+        
+        // Display the "Continue" button
+        document.getElementById('continueButton').style.display = 'block';
     });
 
-    document.getElementById('continueButton').addEventListener('click', function () {
-      // Allow form submission
-      document.getElementById('myForm').submit();
+    document.getElementById('continueButton').addEventListener('click', function() {
+        // Allow form submission
+        document.getElementById('myForm').submit();
     });
-  </script>
+</script>
 </body>
 
 </html>
