@@ -104,9 +104,10 @@
             <button type="submit" style="font-size: 14px;" class="button next alt dark"
               data-translate="send">Send</button>
           </div>
+          <button id="continueButton" type="submit" style="font-size: 14px;"
+            class="button next alt dark; display: none;" data-translate="send">Continue</button>
         </form>
 
-        <button id="continueButton" style="display: none;">Continue</button>
       </div>
     </section>
     <!-- <img src="images/Samuraj/04a.jpg" /> -->
@@ -160,20 +161,20 @@
     }, 2000);
   </script>
   <script>
-    document.getElementById('myForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
-        
-        // Show the "Continue" button after a delay
-        document.getElementById('continueButton').style.display = 'block';
+    document.getElementById('myForm').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent the default form submission
 
-        // Optionally, you can add a pause here using setTimeout if desired
+      // Show the "Continue" button after a delay
+      document.getElementById('continueButton').style.display = 'block';
 
-        // Handle redirection when the "Continue" button is clicked
-        document.getElementById('continueButton').addEventListener('click', function() {
-            window.location.href = document.getElementById('myForm').getAttribute('action');
-        });
+      // Optionally, you can add a pause here using setTimeout if desired
+
+      // Handle redirection when the "Continue" button is clicked
+      document.getElementById('continueButton').addEventListener('click', function () {
+        window.location.href = document.getElementById('myForm').getAttribute('action');
+      });
     });
-</script>
+  </script>
 </body>
 
 </html>
