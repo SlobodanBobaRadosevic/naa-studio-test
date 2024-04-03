@@ -70,7 +70,7 @@
     <div class="background-holder"></div>
     <section class="contact-holder">
       <div class="inner">
-        <form target="_blank" action="https://formsubmit.co/dev.slobodan@gmail.com" method="POST">
+        <form id="myForm" action="https://formsubmit.co/dev.slobodan@gmail.com" method="POST">
           <div>
             <fieldset class="formRow">
               <div class="formRow--item">
@@ -101,9 +101,12 @@
             </fieldset>
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_next" value="https://naa-studio-dev.netlify.app/thank-you.html">
-            <button type="submit" style="font-size: 14px;" class="button next alt dark" data-translate="send">Send</button>
+            <button id="submitButton" style="font-size: 14px;" class="button next alt dark"
+              data-translate="send">Send</button>
           </div>
         </form>
+        <button id="continueButton" style="display: none;">Continue</button>
+
       </div>
     </section>
     <!-- <img src="images/Samuraj/04a.jpg" /> -->
@@ -155,6 +158,21 @@
     window.setInterval(function () {
       progress();
     }, 2000);
+  </script>
+  <script>
+    window.addEventListener('beforeunload', function (event) {
+      // Display the "Continue" button
+      document.getElementById('continueButton').style.display = 'block';
+
+      // Prompt user confirmation
+      event.preventDefault();
+      event.returnValue = '';
+    });
+
+    document.getElementById('continueButton').addEventListener('click', function () {
+      // Allow form submission
+      document.getElementById('myForm').submit();
+    });
   </script>
 </body>
 
