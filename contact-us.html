@@ -7,7 +7,7 @@
 <html>
 
 <head>
-  <title>NAA Studio - O nama</title>
+  <title>NAA Studio - Kontakt</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
@@ -70,42 +70,40 @@
     <div class="background-holder"></div>
     <section class="contact-holder">
       <div class="inner">
-        <form id="myForm" action="https://formsubmit.co/dev.slobodan@gmail.com" method="POST">
+        <form action="https://formsubmit.co/dev.slobodan@gmail.com" method="POST">
           <div>
-              <fieldset class="formRow">
-                  <div class="formRow--item">
-                      <label for="name" class="formRow--input-wrapper js-inputWrapper">
-                          <input type="text" name="name" required class="formRow--input js-input" id="name" autocomplete="off"
-                              placeholder="&nbsp;" required />
-                          <span class="placeholder" data-translate="name" style="text-transform: lowercase;"></span>
-                      </label>
-                  </div>
-              </fieldset>
-              <fieldset class="formRow">
-                  <div class="formRow--item">
-                      <label for="email" class="formRow--input-wrapper js-inputWrapper">
-                          <input type="email" name="email" class="formRow--input js-input" id="email" autocomplete="off"
-                              placeholder="&nbsp;" required />
-                          <span class="placeholder" data-translate="email" style="text-transform: lowercase;"></span>
-                      </label>
-                  </div>
-              </fieldset>
-              <fieldset class="formRow">
-                  <div class="formRow--item">
-                      <label for="message" class="formRow--input-wrapper js-inputWrapper">
-                          <textarea type="text" name="message" class="formRow--input js-input" id="message" autocomplete="off"
-                              placeholder="&nbsp;" required></textarea>
-                          <span class="placeholder" data-translate="message" style="text-transform: lowercase;"></span>
-                      </label>
-                  </div>
-              </fieldset>
-              <input type="hidden" name="_captcha" value="false">
-              <input type="hidden" name="_next" value="https://naa-studio-dev.netlify.app/thank-you.html">
-              <button id="submitButton" style="font-size: 14px;" class="button next alt dark" data-translate="send">Send</button>
+            <fieldset class="formRow">
+              <div class="formRow--item">
+                <label for="name" class="formRow--input-wrapper js-inputWrapper">
+                  <input type="text" name="name" required class="formRow--input js-input" id="name" autocomplete="off"
+                    placeholder="&nbsp;" required />
+                  <span class="placeholder" data-translate="name" style="text-transform: lowercase;"></span>
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="formRow">
+              <div class="formRow--item">
+                <label for="email" class="formRow--input-wrapper js-inputWrapper">
+                  <input type="email" name="email" class="formRow--input js-input" id="email" autocomplete="off"
+                    placeholder="&nbsp;" required />
+                  <span class="placeholder" data-translate="email" style="text-transform: lowercase;"></span>
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="formRow">
+              <div class="formRow--item">
+                <label for="message" class="formRow--input-wrapper js-inputWrapper">
+                  <textarea type="text" name="message" class="formRow--input js-input" id="message" autocomplete="off"
+                    placeholder="&nbsp;" required></textarea>
+                  <span class="placeholder" data-translate="message" style="text-transform: lowercase;"></span>
+                </label>
+              </div>
+            </fieldset>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://naa-studio-dev.netlify.app/thank-you.html">
+            <button type="submit" style="font-size: 14px;" class="button next alt dark" data-translate="send">Send</button>
           </div>
-      </form>
-        <button id="continueButton" style="display: none;">Continue</button>
-
+        </form>
       </div>
     </section>
     <!-- <img src="images/Samuraj/04a.jpg" /> -->
@@ -158,20 +156,6 @@
       progress();
     }, 2000);
   </script>
-  <script>
-    document.getElementById('myForm').addEventListener('submit', function(event) {
-        // Prevent the default form submission
-        event.preventDefault();
-        
-        // Display the "Continue" button
-        document.getElementById('continueButton').style.display = 'block';
-    });
-
-    document.getElementById('continueButton').addEventListener('click', function() {
-        // Allow form submission
-        document.getElementById('myForm').submit();
-    });
-</script>
 </body>
 
 </html>

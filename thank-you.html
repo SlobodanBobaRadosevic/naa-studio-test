@@ -1,65 +1,141 @@
-<!-- form.html -->
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Embedded Form</title>
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/about-us.css" />
-    <link rel="stylesheet" href="assets/css/gallery.css" />
-    <link rel="stylesheet" href="assets/css/carousel.css" />
-    <link rel="stylesheet" href="assets/css/inputs.css" />
-    <!-- Any additional CSS or stylesheets can be included here -->
-  </head>
-  <body>
-    <div class="custom-select" id="language-selector" style="display: none">
-      <div class="select-selected">
-        <img src="images/srbflag.png" alt="SRB" /> SRB
+<!DOCTYPE HTML>
+<!--
+	Standout by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+
+<head>
+  <title>NAA Studio - Kontakt</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/about-us.css" />
+  <link rel="stylesheet" href="assets/css/gallery.css" />
+  <link rel="stylesheet" href="assets/css/carousel.css" />
+  <link rel="stylesheet" href="assets/css/inputs.css" />
+  <script src="language.js"></script>
+</head>
+
+<body class="is-preload">
+
+  <!-- Page wrapper -->
+  <div id="page-wrapper" style="padding-top: 0;">
+    <!-- Header -->
+    <header id="header">
+      <span class="logo"><a href="index.html">NAA<span>studio</span></a></span>
+      <div class="custom-select" id="language-selector">
+        <div class="select-selected">
+          <img src="images/srbflag.png" alt="SRB"> SRB
+        </div>
+        <div class="select-items">
+          <div onclick="changeLanguage('srb')"><img src="images/srbflag.png" alt="SRB"> SRB</div>
+          <div onclick="changeLanguage('en')"><img src="images/enflag.png" alt="EN"> EN</div>
+          <div onclick="changeLanguage('esp')"><img src="images/espflag.png" alt="ESP"> ESP</div>
+          <!-- Add more options for other languages -->
+        </div>
       </div>
-      <div class="select-items">
-        <div onclick="changeLanguage('srb')">
-          <img src="images/srbflag.png" alt="SRB" /> SRB
-        </div>
-        <div onclick="changeLanguage('en')">
-          <img src="images/enflag.png" alt="EN" /> EN
-        </div>
-        <div onclick="changeLanguage('esp')">
-          <img src="images/espflag.png" alt="ESP" /> ESP
-        </div>
-        <!-- Add more options for other languages -->
+      <a class="menu-a" href="#menu"></a>
+    </header>
+    <!-- Nav -->
+    <nav id="menu">
+      <div class="inner">
+        <ul class="links">
+          <li><a href="index.html" data-translate="home">Home</a>
+            <div class="menu-of">
+              <img src="assets/css/navstroke.png" />
+            </div>
+          </li>
+          <li><a href="portfolio.html" data-translate="portfolio">Portfolio</a>
+            <div class="menu-of">
+              <img src="assets/css/navstroke.png" />
+            </div>
+          </li>
+          <li><a href="for-designers.html" data-translate="forDesigners">For Designers</a>
+            <div class="menu-of">
+              <img src="assets/css/navstroke.png" />
+            </div>
+          </li>
+          <li><a href="about-us.html" data-translate="aboutUs">About Us</a>
+            <div class="menu-of">
+              <img src="assets/css/navstroke.png" />
+            </div>
+          </li>
+        </ul>
+        <a class="close"><span>Close</span></a>
       </div>
-    </div>
-    <div style="text-align: center;">
-      <h1
-        style="
-          font-weight: 500;
-          font-size: 32px;
-        "
-      >
-        Uspešno!
-        <i style="color: rgb(12, 182, 12)" class="fas fa-check-circle"></i>
-      </h1>
-      <h4>Hvala Vam na interesovanju!</h4>
-      <h4>Primili smo vasu poruku i potrudicemo se da odgovorimo u najkracem mogucem roku.</h4>
-      <a
-          style="font-size: 14px"
-          class="button next alt dark"
-          data-translate="close"
-          href="form.html"
-        >
-          U redu
-    </a>
-    </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/inputs.js"></script>
-    <script src="assets/js/typing-animation.js"></script>
-    <script src="language.js"></script>
-  </body>
+    </nav>
+    <!-- Main -->
+    <div class="background-holder"></div>
+    <section class="contact-holder">
+      <div class="inner">
+        <div style="text-align: center;">
+          <h1 style="
+              font-weight: 500;
+              font-size: 32px;
+            ">
+            Uspešno!
+            <i style="color: rgb(12, 182, 12)" class="fas fa-check-circle"></i>
+          </h1>
+          <h4>Hvala Vam na interesovanju!</h4>
+          <p>Primili smo vasu poruku i potrudicemo se da odgovorimo u najkracem mogucem roku.</p>
+          <a style="font-size: 14px" class="button next alt dark" data-translate="close" href="form.html">
+            U redu
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- <img src="images/Samuraj/04a.jpg" /> -->
+    <!-- Copyright -->
+    <section class="wrapper style2 copyright no-padding">
+      <div class="inner" data-translate="allRights"></div>
+    </section>
+
+  </div>
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/inputs.js"></script>
+  <script src="assets/js/typing-animation.js"></script>
+  <script>
+    var carousel = $('.carousel');
+    var seats = $('.carousel-seat');
+
+    var next = function (el) {
+      if (el.next().length > 0) {
+        return el.next();
+      } else {
+        return seats.first();
+      }
+    };
+
+    var progress = function (e) {
+      var el = $('.is-ref').removeClass('is-ref');
+      var new_seat = next(el);
+
+      new_seat.addClass('is-ref').css('order', 1);
+      for (var i = 2, ref = seats.length; i <= ref; i++) {
+        new_seat = next(new_seat).css('order', i);
+        console.log(new_seat);
+      }
+
+      carousel.removeClass('is-set');
+
+      return setTimeout((function () {
+        return carousel.addClass('is-set');
+      }), 50);
+    };
+
+    window.setInterval(function () {
+      progress();
+    }, 2000);
+  </script>
+</body>
+
 </html>
