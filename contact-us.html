@@ -101,7 +101,8 @@
             </fieldset>
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_next" value="https://naa-studio-dev.netlify.app/thank-you.html">
-            <button type="submit" style="font-size: 14px;" class="button next alt dark" data-translate="send">Send</button>
+            <button type="submit" style="font-size: 14px;" class="button next alt dark"
+              data-translate="send">Send</button>
           </div>
         </form>
       </div>
@@ -155,6 +156,44 @@
     window.setInterval(function () {
       progress();
     }, 2000);
+  </script>
+  <script>
+    // Function to check if all images are loaded
+    function imagesLoaded(images) {
+      return images.every(img => img.complete);
+    }
+
+    // Preload images and start animation when all images are loaded
+    function preloadImagesAndStartAnimation(urls) {
+      const images = [];
+      urls.forEach(url => {
+        const img = new Image();
+        img.src = url;
+        images.push(img);
+      });
+
+      // Check if all images are loaded every 100 milliseconds
+      const interval = setInterval(() => {
+        if (imagesLoaded(images)) {
+          clearInterval(interval);
+          // Start animation once all images are loaded
+          document.querySelector('.background-holder').style.animationPlayState = 'running';
+        }
+      }, 100);
+    }
+
+    // Array of image URLs to preload
+    const imageUrls = [
+      "images/kontakt/01.jpg",
+      "images/kontakt/02.jpg",
+      "images/kontakt/03.jpg",
+      "images/kontakt/04.jpg",
+      "images/kontakt/05.jpg",
+      "images/kontakt/06.jpg"
+    ];
+
+    // Preload images and start animation
+    preloadImagesAndStartAnimation(imageUrls);
   </script>
 </body>
 
