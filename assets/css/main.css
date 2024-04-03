@@ -5927,8 +5927,29 @@ button .fas {
   right: 50%;
   top: 50%;
   transform: translate(50%, -50%);
-  width: 50%;
-  padding: 15px;
-  display: none;
+  background-color: #fff;
+  width: 500px;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.close-btn {
+  color: #333 !important;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal input[type="text"],
+.modal input[type="password"],
+.modal input[type="email"],
+.modal.visible select,
+.modal textarea {
+  background-color: #fff;
+}
+
+.modal .formRow--input-wrapper.active .placeholder {
   background-color: #fff;
 }

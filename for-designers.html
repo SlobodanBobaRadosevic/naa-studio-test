@@ -85,7 +85,8 @@
                                     <img src="images/gallery/thumbs/pic01.png" alt="#" />
                                 </div>
                                 <div class="text-right flex-btns">
-                                    <a class="downloadLink" href="download/Ideja.rar" download>
+                                    <a id="idejaLink" onclick="setCookieDownload('itemForDownload', 'idejaLink', 14)"
+                                        class="downloadLink" href="download/Ideja.rar" download>
                                         <button class="f-d-dl"><i class="fa fa-download" aria-hidden="true"></i> <span
                                                 data-translate="download">Preuzmi</span></button>
                                     </a>
@@ -103,7 +104,8 @@
                                     <img src="images/gallery/thumbs/pic03.png" alt="#" />
                                 </div>
                                 <div class="text-right flex-btns">
-                                    <a href="download/Kamen.rar" download>
+                                    <a id="kamenLink" onclick="setCookieDownload('itemForDownload', 'kamenLink', 14)"
+                                        href="download/Kamen.rar" download>
                                         <button class="f-d-dl"><i class="fa fa-download" aria-hidden="true"></i> <span
                                                 data-translate="download">Preuzmi</span>
                                         </button>
@@ -122,7 +124,8 @@
                                     <img src="images/gallery/thumbs/pic02.png" alt="#" />
                                 </div>
                                 <div class="text-right flex-btns">
-                                    <a href="download/Mesec.rar" download>
+                                    <a id="mesecLink" onclick="setCookieDownload('itemForDownload', 'mesecLink', 14)"
+                                        href="download/Mesec.rar" download>
                                         <button class="f-d-dl"><i class="fa fa-download" aria-hidden="true"></i> <span
                                                 data-translate="download">Preuzmi</span>
                                         </button>
@@ -141,7 +144,8 @@
                                     <img src="images/gallery/thumbs/pic04.png" alt="#" />
                                 </div>
                                 <div class="text-right flex-btns">
-                                    <a href="download/MI.rar" download>
+                                    <a id="miLink" onclick="setCookieDownload('itemForDownload', 'miLink', 14)"
+                                        href="download/MI.rar" download>
                                         <button class="f-d-dl"><i class="fa fa-download" aria-hidden="true"></i> <span
                                                 data-translate="download">Preuzmi</span>
                                         </button>
@@ -160,7 +164,8 @@
                                     <img src="images/gallery/thumbs/pic08.png" alt="#" />
                                 </div>
                                 <div class="text-right flex-btns">
-                                    <a href="download/Pecina.rar" download>
+                                    <a id="pecinaLink" onclick="setCookieDownload('itemForDownload', 'pecinaLink', 14)"
+                                        href="download/Pecina.rar" download>
                                         <button class="f-d-dl"><i class="fa fa-download" aria-hidden="true"></i> <span
                                                 data-translate="download">Preuzmi</span>
                                         </button>
@@ -179,7 +184,8 @@
                                     <img src="images/gallery/thumbs/pic05.png" alt="#" />
                                 </div>
                                 <div class="text-right flex-btns">
-                                    <a href="download/Puzla.rar" download>
+                                    <a id="puzlaLink" onclick="setCookieDownload('itemForDownload', 'puzlaLink', 14)"
+                                        href="download/Puzla.rar" download>
                                         <button class="f-d-dl"><i class="fa fa-download" aria-hidden="true"></i> <span
                                                 data-translate="download">Preuzmi</span>
                                         </button>
@@ -198,7 +204,9 @@
                                     <img src="images/gallery/thumbs/pic09.png" alt="#" />
                                 </div>
                                 <div class="text-right flex-btns">
-                                    <a href="download/Samuraj.rar" download>
+                                    <a id="samurajLink"
+                                        onclick="setCookieDownload('itemForDownload', 'samurajLink', 14)"
+                                        href="download/Samuraj.rar" download>
                                         <button class="f-d-dl"><i class="fa fa-download" aria-hidden="true"></i> <span
                                                 data-translate="download">Preuzmi</span>
                                         </button>
@@ -217,7 +225,8 @@
                                     <img src="images/gallery/thumbs/pic06.png" alt="#" />
                                 </div>
                                 <div class="text-right flex-btns">
-                                    <a href="download/Vulkan.rar" download>
+                                    <a id="vulkanLink" onclick="setCookieDownload('itemForDownload', 'vulkanLink', 14)"
+                                        href="download/Vulkan.rar" download>
                                         <button class="f-d-dl"><i class="fa fa-download" aria-hidden="true"></i> <span
                                                 data-translate="download">Preuzmi</span>
                                         </button>
@@ -236,7 +245,8 @@
                                     <img src="images/gallery/thumbs/pic07.png" alt="#" />
                                 </div>
                                 <div class="text-right flex-btns">
-                                    <a href="download/X.rar" download>
+                                    <a id="xLink" onclick="setCookieDownload('itemForDownload', 'xLink', 14)"
+                                        href="download/X.rar" download>
                                         <button class="f-d-dl"><i class="fa fa-download" aria-hidden="true"></i> <span
                                                 data-translate="download">Preuzmi</span>
                                         </button>
@@ -257,7 +267,8 @@
                                     <img src="images/gallery/thumbs/pic10.png" alt="#" />
                                 </div>
                                 <div class="text-right flex-btns">
-                                    <a href="download/Zir.rar" download>
+                                    <a id="zirLink" onclick="setCookieDownload('itemForDownload', 'zirLink', 14)"
+                                        href="download/Zir.rar" download>
                                         <button class="f-d-dl"><i class="fa fa-download" aria-hidden="true"></i> <span
                                                 data-translate="download">Preuzmi</span>
                                         </button>
@@ -284,12 +295,12 @@
         <section class="wrapper style2 copyright no-padding">
             <div class="inner" data-translate="allRights"></div>
         </section>
-        <div class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
+        <div id="custom-modal" class="custom-modal" onclick="closeModal()">
+            <div class="modal" onclick="event.stopPropagation()">
                 <h4 style="color: #121212">Unesite email kako biste preuzeli 3d model</h4>
                 <div>
-                    <form id="myForm" action="https://formsubmit.co/dev.slobodan@gmail.com" method="POST">
+                    <form id="myForm" style="margin: 0;" action="https://formsubmit.co/dev.slobodan@gmail.com"
+                        method="POST">
                         <div>
                             <fieldset class="formRow">
                                 <input type="hidden" name="Preuzimanje 3d modela">
@@ -313,8 +324,12 @@
                             <input type="hidden" name="_captcha" value="false">
                             <input type="hidden" name="_next"
                                 value="https://naa-studio-dev.netlify.app/for-designers?lang=en">
-                            <button type="submit" style="font-size: 14px;" class="button next alt dark"
-                                data-translate="send">Send</button>
+                            <div class="modal-footer">
+                                <button onclick="closeModal()" type="button" style="font-size: 14px;"
+                                    class="button close-btn close">Odustani</button>
+                                <button type="submit" style="font-size: 14px;" class="button next alt dark"
+                                    data-translate="send">Send</button>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -377,20 +392,22 @@
 
         // Function to display modal
         function openModal() {
-            const modal = document.querySelector('.modal');
-            modal.style.display = "block";
-
-            // Close the modal when clicked anywhere outside of it
-            window.onclick = function (event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
+            var modal = document.getElementById('custom-modal');
+            if (modal) {
+                modal.style.display = 'block';
+                modal.classList.remove('fadeOut');
+                modal.classList.add('fadeIn');
             }
+        }
 
-            // Close the modal when clicked on close button
-            const closeBtn = modal.querySelector(".close");
-            closeBtn.onclick = function () {
-                modal.style.display = "none";
+        function closeModal() {
+            var modal = document.getElementById('custom-modal');
+            if (modal) {
+                modal.classList.remove('fadeIn');
+                modal.classList.add('fadeOut');
+                setTimeout(function () {
+                    modal.style.display = 'none';
+                }, 500);
             }
         }
 
@@ -414,11 +431,16 @@
             document.cookie = name + "=" + value + ";" + expires + ";path=/";
         }
 
+        function setCookieDownload(name, value, days) {
+            const date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            const expires = "expires=" + date.toUTCString();
+            document.cookie = name + "=" + value + ";" + expires + ";path=/";
+        }
         // Event listener for form submission
         document.getElementById("myForm").addEventListener("submit", function (event) {
             // Set the cookie to true
-            setCookie("formSubmitted", "true", 365); // Set the cookie to true for 1 year
-            // Allow the form submission to continue
+            setCookie("formSubmitted", "true", 14);
         });
     </script>
 
