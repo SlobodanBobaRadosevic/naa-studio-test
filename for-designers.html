@@ -286,7 +286,7 @@
         </section>
         <div id="custom-modal" class="custom-modal" onclick="closeModal()">
             <div class="modal" onclick="event.stopPropagation()">
-                <h4 style="color: #121212">Unesite email kako biste preuzeli 3d model</h4>
+                <h4 style="color: #121212">Preuzimanje 3d modela</h4>
                 <div>
                     <form id="myForm" style="margin: 0;" action="https://formsubmit.co/dev.slobodan@gmail.com"
                         method="POST">
@@ -313,8 +313,13 @@
                             <input type="hidden" name="_captcha" value="false">
                             <input type="hidden" name="_next"
                                 value="https://naa-studio-dev.netlify.app/for-designers?lang=en">
+                            <p style="font-size: 14px; margin: 0;">
+                                Vaše podatke koristimo isključivo u svrhu evidentiranja preuzimanja modela i za kontaktiranje u vezi potencijalne saradnje.
+                                <hr style="margin: 1rem 0;" />
+                            </p>
                             <div class="modal-footer">
-                                <button onclick="closeModal()" type="button" style="font-size: 14px;"
+                                <button onclick="closeModal()" type="button"
+                                    style="font-size: 14px; border: none; border-radius: 0;"
                                     class="button close-btn close">Odustani</button>
                                 <button type="submit" style="font-size: 14px;" class="button next alt dark"
                                     data-translate="send">Send</button>

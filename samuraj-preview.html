@@ -117,51 +117,32 @@
                         data-aos-delay="400">
                         <div class="col-12 col-12-small">
                             <!-- Collapsible items -->
-                            <button class="collapsible"><i class="fas fa-chevron-down chevron arrow"></i>
-                                <h4 class="btn-text-collapsible" data-translate="material"></h4>
-                            </button>
-                            <div class="content-desc">
-                                <p>Patinirani bakar i Glazirana keramika</p>
+                            <h4 class="btn-text-collapsible" data-translate="material"></h4>
+                            <div class="">
+                                <p style="margin-bottom: 0;">Patinirani bakar i Glazirana keramika</p>
                             </div>
-                            <div class="stroke1"></div>
-                            <button class="collapsible"><i class="fas fa-chevron-down chevron arrow"></i>
-                                <h4 class="btn-text-collapsible" data-translate="dimensions"></h4>
-                            </button>
-                            <div class="content-desc">
-                                <p>61x40cm (visina x širina)</p>
+                            <div class="stroke1" style="margin-bottom: 1rem;"></div>
+                            <h4 class="btn-text-collapsible" data-translate="dimensions"></h4>
+                            <div class="">
+                                <p style="margin-bottom: 0;">61x40cm (visina x širina)</p>
                             </div>
-                            <div class="stroke2"></div>
-                            <button class="collapsible"><i class="fas fa-chevron-down chevron arrow"></i>
-                                <h4 class="btn-text-collapsible" data-translate="colors"></h4>
-                            </button>
-                            <div class="content-desc">
-                                <p>
+                            <div class="stroke2" style="margin-bottom: 1rem;"></div>
+                            <h4 class="btn-text-collapsible" data-translate="colors"></h4>
+                            <div class="">
                                 <div class="custom-gallery">
-                                    <img src="images/textures/NAA_Diffuse_004.jpg" alt="Thumbnail 1"
-                                        class="custom-thumbnail"
-                                        onclick="openModal('images/textures/NAA_Diffuse_004.jpg')">
-                                    <img src="images/textures/NAA_Diffuse_009.jpg" alt="Thumbnail 2"
-                                        class="custom-thumbnail"
-                                        onclick="openModal('images/textures/NAA_Diffuse_009.jpg')">
+                                    <img src="images/textures/02.jpg" alt="Thumbnail 1" class="custom-thumbnail"
+                                        onclick="openModal('images/textures/02.jpg')">
+                                    <img src="images/textures/09.jpg" alt="Thumbnail 2" class="custom-thumbnail"
+                                        onclick="openModal('images/textures/09.jpg')">
                                 </div>
-                                </p>
                             </div>
-                            <div class="stroke3"></div>
-                            <button class="collapsible"><i class="fas fa-chevron-down chevron arrow"></i>
-                                <h4 class="btn-text-collapsible">3D modeli</h4>
-                            </button>
-                            <div class="content-desc">
-                                <p>
-                                    <a href="download/Samuraj.rar" download>
-                                        <span>Preuzmi 3D model - Samuraj</span>
-                                        <i class="fa fa-download" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="for-designers.html"><span>Pregled svih 3D modela</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-                                </p>
+                            <div class="stroke3" style="margin-bottom: 1rem;"></div>
+                            <h4 class="btn-text-collapsible">3D modeli</h4>
+                            <div>
+                                <a class="link-a-3d" href="for-designers.html"><span>Pregled svih 3D modela</span><i
+                                        style="margin-left: 10px;" class="fa fa-arrow-right" aria-hidden="true"></i></a>
                             </div>
-
-                            <div class="stroke4"></div>
-
+                            <div class="stroke4" style="margin-bottom: 1rem;"></div>
                             <button class="collapsible"><i class="fas fa-chevron-down chevron arrow"></i>
                                 <h4 class="btn-text-collapsible" data-translate="rest"></h4>
                             </button>
@@ -171,22 +152,15 @@
                                 <p>Svaki luster je ručno izrađen unikat, zbog čega može doći do odstupanja tekstura i
                                     šara u odnosu na primere prikazane u katalogu.</p>
                             </div>
-                            <div class="stroke5"></div>
-
+                            <div class="stroke5" style="margin-bottom: 1rem;"></div>
                         </div>
-
                     </div>
                     <div class="right-desc" data-aos="fade-left" data-aos-delay="600">
                         <img class="dark-desc" src="images/gallery/Samuraj/samuraj-drw.png" />
                         <img class="light-desc" src="images/gallery/Samuraj/samuraj-drw-light.png" />
                     </div>
-
                 </div>
             </div>
-            <a href="download/Samuraj.rar" download>
-                <span>Preuzmi 3D model - Samuraj</span>
-                <i class="fa fa-download" aria-hidden="true"></i>
-            </a>
             <div class="dark-container">
                 <div class="inner-dark">
                     <img src="images/gallery/Samuraj/samuraj_bw.png" />
@@ -205,7 +179,10 @@
         </section>
         <div id="custom-modal" class="custom-modal" onclick="closeModal()">
             <span class="custom-close" onclick="closeModal()">&times;</span>
-            <img src="" alt="Modal Image" id="custom-modal-image">
+            <figure id="figure-image" class="zoom" onmousemove="zoom(event)"
+                style="background-image: url(images/textures/02.jpg)">
+                <img id="custom-modal-image" src="images/textures/02.jpg" />
+            </figure>
         </div>
     </div>
     <!-- Scripts -->
@@ -226,9 +203,11 @@
         function openModal(imageSrc) {
             var modal = document.getElementById('custom-modal');
             var modalImage = document.getElementById('custom-modal-image');
+            var figureImage = document.getElementById('figure-image');
             if (modal && modalImage) {
                 modal.style.display = 'block';
                 modalImage.src = imageSrc;
+                figureImage.style.backgroundImage = `url(${imageSrc})`;
                 modal.classList.remove('fadeOut');
                 modal.classList.add('fadeIn');
             }
@@ -243,6 +222,15 @@
                     modal.style.display = 'none';
                 }, 500);
             }
+        }
+
+        function zoom(e) {
+            var zoomer = e.currentTarget;
+            e.offsetX ? offsetX = e.offsetX : offsetX = e.touches[0].pageX
+            e.offsetY ? offsetY = e.offsetY : offsetX = e.touches[0].pageX
+            x = offsetX / zoomer.offsetWidth * 100
+            y = offsetY / zoomer.offsetHeight * 100
+            zoomer.style.backgroundPosition = x + '% ' + y + '%';
         }
     </script>
 </body>
