@@ -1,0 +1,165 @@
+<!-- form.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Embedded Form</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/about-us.css" />
+    <link rel="stylesheet" href="assets/css/gallery.css" />
+    <link rel="stylesheet" href="assets/css/carousel.css" />
+    <link rel="stylesheet" href="assets/css/inputs.css" />
+    <!-- Any additional CSS or stylesheets can be included here -->
+  </head>
+  <body style="padding: 2px">
+    <div class="custom-select" id="language-selector" style="display: none">
+      <div class="select-selected">
+        <img src="images/srbflag.png" alt="SRB" /> SRB
+      </div>
+      <div class="select-items">
+        <div onclick="changeLanguage('srb')">
+          <img src="images/srbflag.png" alt="SRB" /> SRB
+        </div>
+        <div onclick="changeLanguage('en')">
+          <img src="images/enflag.png" alt="EN" /> EN
+        </div>
+        <div onclick="changeLanguage('esp')">
+          <img src="images/espflag.png" alt="ESP" /> ESP
+        </div>
+        <!-- Add more options for other languages -->
+      </div>
+    </div>
+    <form action="https://formsubmit.co/dev.slobodan@gmail.com" method="POST">
+      <div>
+        <fieldset class="formRow">
+          <div class="formRow--item">
+            <label for="name" class="formRow--input-wrapper js-inputWrapper">
+              <input
+                type="text"
+                name="name"
+                required
+                class="formRow--input js-input"
+                id="name"
+                autocomplete="off"
+                placeholder="&nbsp;"
+                required
+              />
+              <span
+                class="placeholder"
+                data-translate="name"
+                style="text-transform: lowercase"
+              ></span>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="formRow">
+          <div class="formRow--item">
+            <label for="email" class="formRow--input-wrapper js-inputWrapper">
+              <input
+                type="email"
+                name="email"
+                class="formRow--input js-input"
+                id="email"
+                autocomplete="off"
+                placeholder="&nbsp;"
+                required
+              />
+              <span
+                class="placeholder"
+                data-translate="email"
+                style="text-transform: lowercase"
+              ></span>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="formRow">
+          <div class="formRow--item">
+            <label for="message" class="formRow--input-wrapper js-inputWrapper">
+              <textarea
+                type="text"
+                name="message"
+                class="formRow--input js-input"
+                id="message"
+                autocomplete="off"
+                placeholder="&nbsp;"
+                required
+              ></textarea>
+              <span
+                class="placeholder"
+                data-translate="message"
+                style="text-transform: lowercase"
+              ></span>
+            </label>
+          </div>
+        </fieldset>
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://naa-studio-dev.netlify.app/thank-you.html"
+        />
+        <button
+          type="submit"
+          style="font-size: 14px"
+          class="button next alt dark"
+          data-translate="send"
+          onclick="showLoader()"
+        >
+          Send
+        </button>
+        <div class="loader" id="loader"></div>
+      </div>
+    </form>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/inputs.js"></script>
+    <script src="assets/js/typing-animation.js"></script>
+    <script src="language.js"></script>
+    <script>
+      function showLoader() {
+        document.getElementById("loader").style.display = "block";
+      }
+    </script>
+    <style>
+      /* Add CSS for loader */
+      .loader {
+        border: 4px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 4px solid #3498db;
+        width: 50px;
+        height: 50px;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+        display: none; /* Initially hide loader */
+        position: absolute;
+        right: calc(50% - 25px);
+        top: calc(50% - 25px);
+      }
+
+      @-webkit-keyframes spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </body>
+</html>

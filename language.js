@@ -134,6 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
       email: "e-pošta",
       message: "Poruka",
       send: "Pošalji",
+      close: "Zatvori",
     },
 
     en: {
@@ -258,6 +259,7 @@ document.addEventListener("DOMContentLoaded", function () {
       email: "Email",
       message: "Message",
       send: "Send",
+      close: "Close",
     },
     esp: {
       mainheading: "Arte moderno crudo",
@@ -381,6 +383,7 @@ document.addEventListener("DOMContentLoaded", function () {
       email: "Correo electrónico",
       message: "Mensaje",
       send: "Enviar",
+      close: "Cerrar",
     },
     // Add translations for other languages here
   };
