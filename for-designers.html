@@ -419,6 +419,7 @@
         downloadLinks.forEach(function (link) {
             link.onclick = function (event) {
                 if (!formSubmitted || formSubmitted !== 'true') {
+                    setCookieDownload('itemForDownload', this.id, 14);
                     event.preventDefault(); // Prevent default action (file download)
                     openModal(); // Open modal instead
                 }
