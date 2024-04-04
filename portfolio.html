@@ -72,6 +72,7 @@
 
 				<header class="major special">
 					<h1 data-translate="ourCollection"></h1>
+					<button id="toggleBtn">Toggle Dark Mode</button>
 					<p data-translate="experienceElegance"></p>
 				</header>
 			</div>
@@ -295,6 +296,12 @@
 			AOS.init();
 
 		});
+		const toggleBtn = document.getElementById('toggleBtn');
+    const body = document.body;
+
+    toggleBtn.addEventListener('click', function() {
+        body.classList.toggle('dark-mode');
+    });
 	</script>
 
 </body>

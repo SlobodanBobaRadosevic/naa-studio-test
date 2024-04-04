@@ -3713,10 +3713,10 @@ table.alt tbody tr td {
     opacity: 1;
   }
 }
-
+/* 
 body #page-wrapper {
   padding-top: 4rem;
-}
+} */
 
 @media screen and (max-width: 736px) {
   body #page-wrapper {
@@ -5902,4 +5902,8 @@ figure.zoom img {
   transition: opacity 0.5s;
   display: block;
   width: 100%;
+}
+
+html {
+  background-color: #121212;
 }

@@ -82,23 +82,13 @@
 }
 
 .dark-mode .wrapper::before {
-  opacity: 0 !important;
-  display: none;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,0 0,100 100,100' style='fill:%%23080808%3B' /%3E%3C/svg%3E");
+    transition: all 0.2s ease-in-out;
 }
 
-.dark-mode .dark-container {
-  transition: all 0.2s ease-in-out !important;
-  bottom: 0vh;
-}
-
-.dark-mode .inner-dark {
-  opacity: 1;
-  transition: all 0.5s ease-in-out;
-}
-
-.dark-mode .inner-dark img {
-  transform: scale(1) translate(0, 0);
-  transition: all 0.5s ease-in-out;
+.dark-mode #page-wrapper {
+    background-color: #080808;
+    transition: all 0.2s ease-in-out;
 }
 
 .dark-mode .light-desc {
@@ -148,6 +138,27 @@
 }
 .dark-mode .link-a-3d {
   color: #fff;
+}
+
+.dark-mode header.major h1 {
+    border-color: #9d9d9d;
+}
+
+.dark-mode .dark {
+    color: #fff;
+    border-color: #fff !important;
+}
+
+.dark-mode a.button.next.alt.dark {
+    color: #fff !important;
+}
+
+.dark-mode a.button.next.alt.dark::after {
+    filter: none;
+}
+
+.dark-mode .contact-icons a, .dark-mode .copyright {
+    color: #a3a3a3;
 }
 
 /* DARK MODE SCROLL */
@@ -234,7 +245,100 @@
 .dark-scroll .link-a-3d {
   color: #fff;
 }
-
+/* END DARK MODE SCROLL END */
 body {
   display: none;
 }
+
+
+/* DARK MODES COMBINED */
+
+.dark-scroll.dark-mode {
+    background-color: #eeeae9 !important;
+    transition: all 0.2s ease-in-out !important;
+  }
+  .dark-scroll.dark-mode h4,
+  .dark-scroll.dark-mode h1,
+  .dark-scroll.dark-mode i {
+    color: #333 !important;
+    transition: all 0.2s ease-in-out !important;
+  }
+  .dark-scroll.dark-mode .wrapper {
+    background-color: #eeeae9 !important;
+    transition: all 0.2s ease-in-out !important;
+  }
+  .dark-scroll.dark-mode .wrapper.style2 {
+    background-color: #afa393 !important;
+    transition: all 0.2s ease-in-out !important;
+  }
+  
+  .dark-scroll.dark-mode .wrapper::before {
+    opacity: 1 !important;
+    display: block;
+  }
+  
+  .dark-scroll.dark-mode .dark-container {
+    transition: all 0.2s ease-in-out !important;
+    bottom: 0vh;
+  }
+  
+  .dark-scroll.dark-mode .inner-dark {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .dark-scroll.dark-mode .inner-dark img {
+    transform: scale(1) translate(0, 0);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .dark-scroll.dark-mode .light-desc {
+    display: none;
+  }
+  
+  .dark-scroll.dark-mode .dark-desc {
+    display: block;
+  }
+  
+  .dark-scroll.dark-mode .stroke1 {
+    background-image: url("penstroke1.png");
+  }
+  
+  .dark-scroll.dark-mode .stroke2 {
+    background-image: url("penstroke2.png");
+  }
+  
+  .dark-scroll.dark-mode .stroke3 {
+    background-image: url("penstroke3.png");
+  }
+  
+  .dark-scroll.dark-mode .stroke4 {
+    background-image: url("penstroke4.png");
+  }
+  
+  .dark-scroll.dark-mode .stroke5 {
+    background-image: url("penstroke5.png");
+  }
+  
+  .dark-scroll.dark-mode p {
+    color: #333;
+  }
+  
+  .dark-scroll.dark-mode .select-items {
+    background-color: #eeeae9;
+    filter: drop-shadow(5px 5px 10px #8b8989);
+    color: #333;
+  }
+  
+  .dark-scroll.dark-mode .select-items div:hover {
+    background-color: #afa393;
+  }
+  
+  .dark-scroll .content-desc a {
+    color: #a3a3a3;
+  }
+  .dark-scroll.dark-mode .link-a-3d {
+    color: #333;
+  }
+
+  
