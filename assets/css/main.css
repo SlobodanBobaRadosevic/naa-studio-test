@@ -5434,26 +5434,6 @@ button .fas {
   transition: all 0.3s ease-in-out;
 }
 
-.dark-mode {
-  background-color: #080808 !important;
-  transition: all 0.2s ease-in-out !important;
-}
-.dark-mode h4,
-.dark-mode h1,
-.dark-mode i {
-  color: #fff !important;
-  transition: all 0.2s ease-in-out !important;
-}
-.dark-mode .wrapper {
-  background-color: #080808 !important;
-  transition: all 0.2s ease-in-out !important;
-}
-
-.dark-mode .wrapper::before {
-  opacity: 0 !important;
-  display: none;
-}
-
 .dark-container {
   left: 0;
   z-index: 99999999;
@@ -5468,11 +5448,6 @@ button .fas {
 .dark-container img {
   height: calc(70vh - 25px);
   margin-left: 50px;
-}
-
-.dark-mode .dark-container {
-  transition: all 0.2s ease-in-out !important;
-  bottom: 0vh;
 }
 
 .inner-dark {
@@ -5491,16 +5466,6 @@ button .fas {
   transition: all 0.5s ease-in-out;
 }
 
-.dark-mode .inner-dark {
-  opacity: 1;
-  transition: all 0.5s ease-in-out;
-}
-
-.dark-mode .inner-dark img {
-  transform: scale(1) translate(0, 0);
-  transition: all 0.5s ease-in-out;
-}
-
 .inner-dark p {
   color: #a3a3a3;
   text-align: right;
@@ -5516,38 +5481,6 @@ button .fas {
 
 .dark-desc {
   display: block;
-}
-
-.dark-mode .light-desc {
-  display: block;
-}
-
-.dark-mode .dark-desc {
-  display: none;
-}
-
-.dark-mode .stroke1 {
-  background-image: url("penstroke1light.png");
-}
-
-.dark-mode .stroke2 {
-  background-image: url("penstroke2light.png");
-}
-
-.dark-mode .stroke3 {
-  background-image: url("penstroke3light.png");
-}
-
-.dark-mode .stroke4 {
-  background-image: url("penstroke4light.png");
-}
-
-.dark-mode .stroke5 {
-  background-image: url("penstroke5light.png");
-}
-
-.dark-mode p {
-  color: #a3a3a3;
 }
 
 .suggestions-div {
@@ -5707,15 +5640,6 @@ button .fas {
   color: #333;
 }
 
-.dark-mode .select-items {
-  background-color: #141414;
-  filter: none;
-  color: #fff;
-}
-
-.dark-mode .select-items div:hover {
-  background-color: #252525;
-}
 
 .content-desc p {
   margin: 1rem 0 2rem 0;
@@ -5803,9 +5727,6 @@ button .fas {
   font-weight: 500;
 }
 
-.dark-mode .content-desc a {
-  color: #a3a3a3;
-}
 
 .contact-holder {
   position: absolute;
@@ -5964,9 +5885,6 @@ button .fas {
   color: #333;
 }
 
-.dark-mode .link-a-3d {
-  color: #fff;
-}
 
 figure.zoom {
   background-position: 50% 50%;
@@ -5987,3 +5905,4 @@ figure.zoom img {
   display: block;
   width: 100%;
 }
+

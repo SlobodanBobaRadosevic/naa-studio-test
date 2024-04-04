@@ -1,0 +1,87 @@
+.dark-mode {
+    background-color: #080808 !important;
+    transition: all 0.2s ease-in-out !important;
+  }
+  .dark-mode h4,
+  .dark-mode h1,
+  .dark-mode i {
+    color: #fff !important;
+    transition: all 0.2s ease-in-out !important;
+  }
+  .dark-mode .wrapper {
+    background-color: #080808 !important;
+    transition: all 0.2s ease-in-out !important;
+  }
+  
+  .dark-mode .wrapper::before {
+    opacity: 0 !important;
+    display: none;
+  }
+  
+  .dark-mode .dark-container {
+    transition: all 0.2s ease-in-out !important;
+    bottom: 0vh;
+  }
+  
+  .dark-mode .inner-dark {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .dark-mode .inner-dark img {
+    transform: scale(1) translate(0, 0);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .dark-mode .light-desc {
+    display: block;
+  }
+  
+  .dark-mode .dark-desc {
+    display: none;
+  }
+  
+  .dark-mode .stroke1 {
+    background-image: url("penstroke1light.png");
+  }
+  
+  .dark-mode .stroke2 {
+    background-image: url("penstroke2light.png");
+  }
+  
+  .dark-mode .stroke3 {
+    background-image: url("penstroke3light.png");
+  }
+  
+  .dark-mode .stroke4 {
+    background-image: url("penstroke4light.png");
+  }
+  
+  .dark-mode .stroke5 {
+    background-image: url("penstroke5light.png");
+  }
+  
+  .dark-mode p {
+    color: #a3a3a3;
+  }
+  
+  .dark-mode .select-items {
+    background-color: #141414;
+    filter: none;
+    color: #fff;
+  }
+  
+  .dark-mode .select-items div:hover {
+    background-color: #252525;
+  }
+  
+  .dark-mode .content-desc a {
+    color: #a3a3a3;
+  }
+  .dark-mode .link-a-3d {
+    color: #fff;
+  }
+
+  body {
+    display: none;
+  }

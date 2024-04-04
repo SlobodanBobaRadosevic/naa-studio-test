@@ -1,4 +1,5 @@
-function toggleDarkMode() {
+  // Function to toggle between light and dark mode
+  function toggleDarkMode() {
     var darkModeEnabled = getCookie('darkModeEnabled');
 
     // If dark mode is enabled, disable it
@@ -20,6 +21,9 @@ function applyDarkMode() {
     } else {
         document.body.classList.remove('dark-mode');
     }
+
+    // After applying dark mode, show the body
+    document.body.style.display = 'block';
 }
 
 // Function to set cookie
