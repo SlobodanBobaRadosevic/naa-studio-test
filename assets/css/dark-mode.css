@@ -1,87 +1,240 @@
-.dark-mode {
-    background-color: #080808 !important;
-    transition: all 0.2s ease-in-out !important;
-  }
-  .dark-mode h4,
-  .dark-mode h1,
-  .dark-mode i {
-    color: #fff !important;
-    transition: all 0.2s ease-in-out !important;
-  }
-  .dark-mode .wrapper {
-    background-color: #080808 !important;
-    transition: all 0.2s ease-in-out !important;
-  }
-  
-  .dark-mode .wrapper::before {
-    opacity: 0 !important;
-    display: none;
-  }
-  
-  .dark-mode .dark-container {
-    transition: all 0.2s ease-in-out !important;
-    bottom: 0vh;
-  }
-  
-  .dark-mode .inner-dark {
-    opacity: 1;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .dark-mode .inner-dark img {
-    transform: scale(1) translate(0, 0);
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .dark-mode .light-desc {
-    display: block;
-  }
-  
-  .dark-mode .dark-desc {
-    display: none;
-  }
-  
-  .dark-mode .stroke1 {
-    background-image: url("penstroke1light.png");
-  }
-  
-  .dark-mode .stroke2 {
-    background-image: url("penstroke2light.png");
-  }
-  
-  .dark-mode .stroke3 {
-    background-image: url("penstroke3light.png");
-  }
-  
-  .dark-mode .stroke4 {
-    background-image: url("penstroke4light.png");
-  }
-  
-  .dark-mode .stroke5 {
-    background-image: url("penstroke5light.png");
-  }
-  
-  .dark-mode p {
-    color: #a3a3a3;
-  }
-  
-  .dark-mode .select-items {
-    background-color: #141414;
-    filter: none;
-    color: #fff;
-  }
-  
-  .dark-mode .select-items div:hover {
-    background-color: #252525;
-  }
-  
-  .dark-mode .content-desc a {
-    color: #a3a3a3;
-  }
-  .dark-mode .link-a-3d {
-    color: #fff;
-  }
+.dark-display {
+  display: none;
+  margin-right: 5px;
+  opacity: 0.5;
+}
 
-  body {
-    display: none;
-  }
+.dark-mode-btn {
+  position: relative;
+  width: 70px;
+  background: linear-gradient(
+    105.2deg,
+    rgb(253, 176, 71) 11.2%,
+    rgb(255, 78, 78) 117.9%
+  );
+  height: 30px;
+  border-radius: 35px;
+  padding: 0;
+  text-align: left;
+  padding-left: 15px;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.dark-mode-btn i {
+  font-size: 20px;
+}
+
+.radio-control {
+  transition: all 0.4s ease-in-out;
+  width: 23px;
+  height: 23px;
+  background-color: #fff;
+  border-radius: 100%;
+  display: inline-block;
+  position: absolute;
+  right: 5px;
+  top: 3px;
+  -webkit-box-shadow: 2px 4px 7px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 4px 7px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 4px 7px -3px rgba(0, 0, 0, 0.75);
+}
+
+.dark-mode .radio-control {
+  transition: all 0.4s ease-in-out;
+  right: 43px;
+}
+
+.dark-mode .dark-mode-btn {
+  background: #4b4b4b;
+  justify-content: right;
+  transition: all 0.4s ease-in-out;
+}
+
+.light-display {
+  margin-left: -5px;
+  opacity: 0.9;
+}
+
+.dark-mode .light-display {
+  display: none;
+}
+
+.dark-mode .dark-display {
+  display: inline-block;
+}
+
+.dark-mode {
+  background-color: #080808 !important;
+  transition: all 0.2s ease-in-out !important;
+}
+.dark-mode h4,
+.dark-mode h1,
+.dark-mode i {
+  color: #fff !important;
+  transition: all 0.2s ease-in-out !important;
+}
+.dark-mode .wrapper {
+  background-color: #080808 !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.dark-mode .wrapper::before {
+  opacity: 0 !important;
+  display: none;
+}
+
+.dark-mode .dark-container {
+  transition: all 0.2s ease-in-out !important;
+  bottom: 0vh;
+}
+
+.dark-mode .inner-dark {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.dark-mode .inner-dark img {
+  transform: scale(1) translate(0, 0);
+  transition: all 0.5s ease-in-out;
+}
+
+.dark-mode .light-desc {
+  display: block;
+}
+
+.dark-mode .dark-desc {
+  display: none;
+}
+
+.dark-mode .stroke1 {
+  background-image: url("penstroke1light.png");
+}
+
+.dark-mode .stroke2 {
+  background-image: url("penstroke2light.png");
+}
+
+.dark-mode .stroke3 {
+  background-image: url("penstroke3light.png");
+}
+
+.dark-mode .stroke4 {
+  background-image: url("penstroke4light.png");
+}
+
+.dark-mode .stroke5 {
+  background-image: url("penstroke5light.png");
+}
+
+.dark-mode p {
+  color: #a3a3a3;
+}
+
+.dark-mode .select-items {
+  background-color: #141414;
+  filter: none;
+  color: #fff;
+}
+
+.dark-mode .select-items div:hover {
+  background-color: #252525;
+}
+
+.dark-mode .content-desc a {
+  color: #a3a3a3;
+}
+.dark-mode .link-a-3d {
+  color: #fff;
+}
+
+/* DARK MODE SCROLL */
+.dark-scroll {
+  background-color: #080808 !important;
+  transition: all 0.2s ease-in-out !important;
+}
+.dark-scroll h4,
+.dark-scroll h1,
+.dark-scroll i {
+  color: #fff !important;
+  transition: all 0.2s ease-in-out !important;
+}
+.dark-scroll .wrapper {
+  background-color: #080808 !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.dark-scroll .wrapper::before {
+  opacity: 0 !important;
+  display: none;
+}
+
+.dark-scroll .dark-container {
+  transition: all 0.2s ease-in-out !important;
+  bottom: 0vh;
+}
+
+.dark-scroll .inner-dark {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.dark-scroll .inner-dark img {
+  transform: scale(1) translate(0, 0);
+  transition: all 0.5s ease-in-out;
+}
+
+.dark-scroll .light-desc {
+  display: block;
+}
+
+.dark-scroll .dark-desc {
+  display: none;
+}
+
+.dark-scroll .stroke1 {
+  background-image: url("penstroke1light.png");
+}
+
+.dark-scroll .stroke2 {
+  background-image: url("penstroke2light.png");
+}
+
+.dark-scroll .stroke3 {
+  background-image: url("penstroke3light.png");
+}
+
+.dark-scroll .stroke4 {
+  background-image: url("penstroke4light.png");
+}
+
+.dark-scroll .stroke5 {
+  background-image: url("penstroke5light.png");
+}
+
+.dark-scroll p {
+  color: #a3a3a3;
+}
+
+.dark-scroll .select-items {
+  background-color: #141414;
+  filter: none;
+  color: #fff;
+}
+
+.dark-scroll .select-items div:hover {
+  background-color: #252525;
+}
+
+.dark-scroll .content-desc a {
+  color: #a3a3a3;
+}
+.dark-scroll .link-a-3d {
+  color: #fff;
+}
+
+body {
+  display: none;
+}

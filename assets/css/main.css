@@ -3938,6 +3938,7 @@ body #page-wrapper {
     height: 3rem;
     line-height: 3rem;
     padding: 0 0 0 0.5rem;
+    align-items: center;
   }
 
   #header > .logo {
@@ -5640,7 +5641,6 @@ button .fas {
   color: #333;
 }
 
-
 .content-desc p {
   margin: 1rem 0 2rem 0;
 }
@@ -5726,7 +5726,6 @@ button .fas {
 .content-desc a:hover {
   font-weight: 500;
 }
-
 
 .contact-holder {
   position: absolute;
@@ -5885,7 +5884,6 @@ button .fas {
   color: #333;
 }
 
-
 figure.zoom {
   background-position: 50% 50%;
   position: relative;
@@ -5905,4 +5903,3 @@ figure.zoom img {
   display: block;
   width: 100%;
 }
-

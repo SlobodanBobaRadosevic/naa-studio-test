@@ -15,10 +15,10 @@ window.addEventListener("scroll", function () {
       function (entries) {
         entries.forEach(function (entry) {
           if (entry.isIntersecting && entry.intersectionRatio >= 0.1) {
-            body.classList.add("dark-mode");
+            body.classList.add("dark-scroll");
           }
           if (!entry.isIntersecting && entry.intersectionRatio <= 0) {
-            body.classList.remove("dark-mode");
+            body.classList.remove("dark-scroll");
           }
         });
       },
