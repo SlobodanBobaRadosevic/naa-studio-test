@@ -4162,6 +4162,7 @@ body.is-menu-visible #menu .inner {
   align-items: center;
   color: #ffffff;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   min-height: 40rem;
   min-height: 95vh;
@@ -4625,7 +4626,7 @@ body.is-preload #banner .bg {
   }
 
   #banner h1 {
-    font-size: 4rem;
+    font-size: 3em;
     padding-bottom: 3rem;
   }
 
@@ -4644,7 +4645,7 @@ body.is-preload #banner .bg {
   #banner h1 {
     font-size: 3rem;
     padding-bottom: 3rem;
-    text-align-last: center;
+    text-align-last: justify;
     text-align: center;
   }
 
@@ -4673,6 +4674,16 @@ body.is-preload #banner .bg {
     -webkit-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #banner h1 {
+    font-size: 3rem;
+    padding-bottom: 3rem;
+    text-align-last: center;
+    text-align: center;
+    word-spacing: 300px;
   }
 }
 
@@ -5906,4 +5917,102 @@ figure.zoom img {
 
 html {
   background-color: #121212;
+}
+
+.img1-about {
+  background-image: url(../../images/gallery/AboutUs/17.jpg);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.img2-about {
+  background-image: url(../../images/gallery/AboutUs/05a.jpg);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: end;
+}
+
+.about-text {
+  width: 50%;
+  padding-left: 15rem;
+  padding-right: 15px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  color: #fff;
+  backdrop-filter: blur(8px) brightness(0.5) sepia(0.3);
+}
+
+.about-text-r {
+  width: 50%;
+  padding-right: 15rem;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  color: #fff;
+  backdrop-filter: blur(8px) brightness(0.5) sepia(0.3);
+}
+
+.about-text h3,
+.about-text-r h3 {
+  color: #fff;
+}
+
+@media screen and (max-width: 1600px) {
+  .about-text {
+    width: 50%;
+    padding-left: 10rem;
+  }
+  .about-text-r {
+    width: 50%;
+    padding-right: 10rem;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .about-text {
+    width: 60%;
+    padding-left: 7rem;
+  }
+  .about-text-r {
+    width: 60%;
+    padding-right: 7rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .about-text {
+    width: 65%;
+    padding-left: 5rem;
+  }
+  .about-text-r {
+    width: 65%;
+    padding-right: 5rem;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .about-text {
+    width: 75%;
+    padding-left: 4rem;
+  }
+  .about-text-r {
+    width: 75%;
+    padding-right: 4rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .about-text {
+    width: 100%;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  .about-text-r {
+    width: 100%;
+    padding-right: 45px;
+    padding-left: 45px;
+  }
 }
