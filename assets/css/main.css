@@ -5985,6 +5985,7 @@ html {
   padding-bottom: 1px;
   color: #fff;
   backdrop-filter: blur(8px) brightness(50%) sepia(30%);
+  -webkit-backdrop-filter: blur(8px) brightness(50%) sepia(30%);
 }
 
 .about-text-r {
@@ -5995,6 +5996,7 @@ html {
   padding-bottom: 1px;
   color: #fff;
   backdrop-filter: blur(8px) brightness(50%) sepia(30%);
+  -webkit-backdrop-filter: blur(8px) brightness(50%) sepia(30%);
 }
 
 .about-text h3,
