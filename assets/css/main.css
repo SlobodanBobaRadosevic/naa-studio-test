@@ -5946,8 +5946,8 @@ html {
     rgba(80, 80, 80, 0.2),
     rgba(216, 216, 216, 0.2)
   ); */
-  background: linear-gradient(-45deg, rgb(0, 0, 0), rgba(33, 33, 33, 0.59), rgba(49, 20, 20, 0.286), rgb(135, 99, 58));
-  background-size: 400% 400%;
+  background: linear-gradient(-45deg, rgb(0, 0, 0), rgba(33, 33, 33, 0.59), rgba(49, 20, 20, 0.286), rgba(44, 34, 22, 0.692));
+  background-size: 200% 200%;
   animation: gradient-animation 15s ease infinite;
   height: 100%;
   width: 100%;
@@ -5984,7 +5984,7 @@ html {
   padding-top: 1px;
   padding-bottom: 1px;
   color: #fff;
-  backdrop-filter: blur(8px) brightness(0.5) sepia(0.3);
+  backdrop-filter: blur(8px) brightness(50%) sepia(30%);
 }
 
 .about-text-r {
@@ -5994,7 +5994,7 @@ html {
   padding-top: 1px;
   padding-bottom: 1px;
   color: #fff;
-  backdrop-filter: blur(8px) brightness(0.5) sepia(0.3);
+  backdrop-filter: blur(8px) brightness(50%) sepia(30%);
 }
 
 .about-text h3,
