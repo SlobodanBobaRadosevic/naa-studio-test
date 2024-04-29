@@ -4676,7 +4676,9 @@ body.is-preload #banner .bg {
     justify-content: center;
   }
 }
-
+.about-us-footer {
+  width: 100%; margin-left: 75px;
+}
 @media screen and (max-width: 768px) {
   #banner h1 {
     font-size: 3rem;
@@ -4685,6 +4687,16 @@ body.is-preload #banner .bg {
     text-align: center;
     word-spacing: 300px;
   }
+
+  .about-us-footer {
+    width: 100%;
+    margin-left: 75px;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+ 
 }
 
 @media screen and (max-width: 736px) {
