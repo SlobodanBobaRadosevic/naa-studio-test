@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/gallery.css" />
     <link rel="stylesheet" href="assets/css/preview.css" />
+    <link rel="stylesheet" href="assets/css/dark-mode.css" />
     <script src="language.js"></script>
 
 </head>
@@ -24,7 +25,29 @@
 
         <!-- Header -->
         <header id="header">
-            <span class="logo"><a href="index.html">NAA<span>studio</span></a></span>
+            <span class="logo"><a href="index.html">NAA<span>studio</span></a></span><button onclick="toggleDarkMode()"
+                class="dark-mode-btn">
+                <span style="text-transform: uppercase;
+                    display: inline-block;
+                    text-transform: uppercase;
+                    display: inline-block;
+                    position: absolute;
+                    left: 10px;
+                    color: #fff;
+                    z-index: 1;
+                  " class="zero-switch">O</span>
+                <span style="
+                    text-transform: uppercase;
+                    display: inline-block;
+                    text-transform: uppercase;
+                    display: inline-block;
+                    position: absolute;
+                    right: 10px;
+                    color: #333;
+                    z-index: 1;
+                  " class="one-switch">I</span>
+                <div class="radio-control"></div>
+            </button>
             <div class="custom-select" id="language-selector">
                 <div class="select-selected">
                     <img src="images/srbflag.png" alt="SRB"> SRB
@@ -48,32 +71,32 @@
         </div>
         <!-- Nav -->
         <nav id="menu">
-			<div class="inner">
-				<ul class="links">
-					<li><a href="index.html" data-translate="home">Home</a>
-						<div class="menu-of">
-							<img src="assets/css/navstroke.png" />
-						</div>
-					</li>
-					<li><a href="portfolio.html" data-translate="portfolio">Portfolio</a>
-						<div class="menu-of">
-							<img src="assets/css/navstroke.png" />
-						</div>
-					</li>
-					<li><a href="for-designers.html" data-translate="forDesigners">For Designers</a>
-						<div class="menu-of">
-							<img src="assets/css/navstroke.png" />
-						</div>
-					</li>
-					<li><a href="about-us.html" data-translate="aboutUs">About Us</a>
-						<div class="menu-of">
-							<img src="assets/css/navstroke.png" />
-						</div>
-					</li>
-				</ul>
-				<a class="close"><span>Close</span></a>
-			</div>
-		</nav>
+            <div class="inner">
+                <ul class="links">
+                    <li><a href="index.html" data-translate="home">Home</a>
+                        <div class="menu-of">
+                            <img src="assets/css/navstroke.png" />
+                        </div>
+                    </li>
+                    <li><a href="portfolio.html" data-translate="portfolio">Portfolio</a>
+                        <div class="menu-of">
+                            <img src="assets/css/navstroke.png" />
+                        </div>
+                    </li>
+                    <li><a href="for-designers.html" data-translate="forDesigners">For Designers</a>
+                        <div class="menu-of">
+                            <img src="assets/css/navstroke.png" />
+                        </div>
+                    </li>
+                    <li><a href="about-us.html" data-translate="aboutUs">About Us</a>
+                        <div class="menu-of">
+                            <img src="assets/css/navstroke.png" />
+                        </div>
+                    </li>
+                </ul>
+                <a class="close"><span>Close</span></a>
+            </div>
+        </nav>
         <!-- Main -->
         <section id="main" class="wrapper style1">
             <div class="inner">
@@ -197,6 +220,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="assets/js/preview-page.js"></script>
+    <script src="assets/js/darkmode.js"></script>
 
 </body>
 

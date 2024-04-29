@@ -25,7 +25,35 @@
         <!-- Header -->
         <header id="header">
             <span class="logo"><a href="index.html">NAA<span>studio</span></a></span>
-            <button onclick="toggleDarkMode()" class="dark-mode-btn"><i class="fa fa-lightbulb light-display"></i><i class="fa fa-moon dark-display"></i><div class="radio-control"></div></button>
+            <button onclick="toggleDarkMode()" class="dark-mode-btn">
+                <span style="text-transform: uppercase;
+                    display: inline-block;
+                    text-transform: uppercase;
+                    display: inline-block;
+                    position: absolute;
+                    left: 10px;
+                    color: #fff;
+                    z-index: 1;
+                  "
+                  class="zero-switch"
+                  >O</span
+                >
+                <span
+                  style="
+                    text-transform: uppercase;
+                    display: inline-block;
+                    text-transform: uppercase;
+                    display: inline-block;
+                    position: absolute;
+                    right: 10px;
+                    color: #333;
+                    z-index: 1;
+                  "
+                  class="one-switch"
+                  >I</span
+                >
+                <div class="radio-control"></div>
+              </button>
             <div class="custom-select" id="language-selector">
                 <div class="select-selected">
                     <img src="images/srbflag.png" alt="SRB"> SRB
