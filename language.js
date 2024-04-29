@@ -39,11 +39,11 @@ document.addEventListener("DOMContentLoaded", function () {
       miSubTitle: "Crvena nit energije",
       more: "Detaljnije",
       samurajFullDesc1:
-        "U japanskoj kulturi, vraćanjem u davnu prošlost dolazimo do ratnika davnih vremena - samuraja. Inspirisani tim konceptom, stvorili smo našeg 'Samuraja', luster koji odaje počast karakteru I učenju drevnih ratnika.",
+        "U japanskoj kulturi, vraćanjem u davnu prošlost dolazimo do ratnika davnih vremena - samuraja. Inspirisani tim konceptom, stvorili smo našeg “Samuraja“, luster koji odaje počast karakteru I učenju drevnih ratnika.",
       samurajFullDesc2:
         "Oblik I boja lustera podseća na “kabuto”, tradicionalni šlem samuraja koji su nosili u bitkama, dok sam dizajn odražava suštinske vrednosti filozofije dalekog istoka - minimalizam, wabi sabi, iki. Dok smo ga stvarali, nastojali smo da ti principi prožmu svaki aspekt dizajna. Kroz nijanse patine stvorene oksidiranjem bakra kroz vreme, možemo zamisliti prošlost ovog materijala i osetiti prisustvo godina koje ga je oblikovalo. Drugi deo lustera izrađen od gline, simbolizuje tradiciju i kontinuitet između generacija koje povezuje isti materijal, zemlja. Ne postoji čovek čiji preci nisu koristili ovaj materijal u izradi kuća, posuđa, i drugih predmeta.",
       samurajFullDesc3:
-        "U 'Samuraju' pronalazimo više od običnog komada osvetljenja; on je poput portala kojim se možemo povezati sa dubokim moralnim vrednostima i duhovnom mudrošću japanske tradicije, podsećajući nas na lepotu nesavršenosti, jednostavnosti i nepravilnosti.",
+        "U “Samuraju“ pronalazimo više od običnog komada osvetljenja; on je poput portala kojim se možemo povezati sa dubokim moralnim vrednostima i duhovnom mudrošću japanske tradicije, podsećajući nas na lepotu nesavršenosti, jednostavnosti i nepravilnosti.",
       specification: "specifikacija",
       material: "materijal",
       dimensions: "dimenzije",

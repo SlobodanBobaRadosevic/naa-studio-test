@@ -35,12 +35,8 @@
                     left: 10px;
                     color: #fff;
                     z-index: 1;
-                  "
-                  class="zero-switch"
-                  >O</span
-                >
-                <span
-                  style="
+                  " class="zero-switch">O</span>
+                <span style="
                     text-transform: uppercase;
                     display: inline-block;
                     text-transform: uppercase;
@@ -49,12 +45,9 @@
                     right: 10px;
                     color: #333;
                     z-index: 1;
-                  "
-                  class="one-switch"
-                  >I</span
-                >
+                  " class="one-switch">I</span>
                 <div class="radio-control"></div>
-              </button>
+            </button>
             <div class="custom-select" id="language-selector">
                 <div class="select-selected">
                     <img src="images/srbflag.png" alt="SRB"> SRB
@@ -78,37 +71,37 @@
         </div>
         <!-- Nav -->
         <nav id="menu">
-			<div class="inner">
-				<ul class="links">
-					<li><a href="index.html" data-translate="home">Home</a>
-						<div class="menu-of">
-							<img src="assets/css/navstroke.png" />
-						</div>
-					</li>
-					<li><a href="portfolio.html" data-translate="portfolio">Portfolio</a>
-						<div class="menu-of">
-							<img src="assets/css/navstroke.png" />
-						</div>
-					</li>
-					<li><a href="for-designers.html" data-translate="forDesigners">For Designers</a>
-						<div class="menu-of">
-							<img src="assets/css/navstroke.png" />
-						</div>
-					</li>
-					<li><a href="about-us.html" data-translate="aboutUs">About Us</a>
-						<div class="menu-of">
-							<img src="assets/css/navstroke.png" />
-						</div>
-					</li>
-					<li><a href="contact-us.html">Kontakt</a>
-						<div class="menu-of">
-							<img src="assets/css/navstroke.png" />
-						</div>
-					</li>
-				</ul>
-				<a class="close"><span>Close</span></a>
-			</div>
-		</nav>
+            <div class="inner">
+                <ul class="links">
+                    <li><a href="index.html" data-translate="home">Home</a>
+                        <div class="menu-of">
+                            <img src="assets/css/navstroke.png" />
+                        </div>
+                    </li>
+                    <li><a href="portfolio.html" data-translate="portfolio">Portfolio</a>
+                        <div class="menu-of">
+                            <img src="assets/css/navstroke.png" />
+                        </div>
+                    </li>
+                    <li><a href="for-designers.html" data-translate="forDesigners">For Designers</a>
+                        <div class="menu-of">
+                            <img src="assets/css/navstroke.png" />
+                        </div>
+                    </li>
+                    <li><a href="about-us.html" data-translate="aboutUs">About Us</a>
+                        <div class="menu-of">
+                            <img src="assets/css/navstroke.png" />
+                        </div>
+                    </li>
+                    <li><a href="contact-us.html">Kontakt</a>
+                        <div class="menu-of">
+                            <img src="assets/css/navstroke.png" />
+                        </div>
+                    </li>
+                </ul>
+                <a class="close"><span>Close</span></a>
+            </div>
+        </nav>
         <!-- Main -->
         <section id="main" class="wrapper style1">
             <div class="inner">
@@ -151,12 +144,12 @@
                             <!-- Collapsible items -->
                             <h4 class="btn-text-collapsible" data-translate="material"></h4>
                             <div class="">
-                                <p style="margin-bottom: 0;">Patinirani bakar i Glazirana keramika</p>
+                                <p style="margin-bottom: 0;">Polistiren</p>
                             </div>
                             <div class="stroke1" style="margin-bottom: 1rem;"></div>
                             <h4 class="btn-text-collapsible" data-translate="dimensions"></h4>
                             <div class="">
-                                <p style="margin-bottom: 0;">61x40cm (visina x širina)</p>
+                                <p style="margin-bottom: 0;">100x47cm, 80x40cm, 70x33cm (visina x širina) <br />Mogućnost proizvoljnih dimenzija.</p>
                             </div>
                             <div class="stroke2" style="margin-bottom: 1rem;"></div>
                             <h4 class="btn-text-collapsible" data-translate="colors"></h4>
@@ -166,6 +159,8 @@
                                         onclick="openModal('images/textures/05.jpg')">
                                     <img src="images/textures/06.jpg" alt="Thumbnail 2" class="custom-thumbnail"
                                         onclick="openModal('images/textures/06.jpg')">
+                                    <img src="images/textures/custom.jpg" alt="Thumbnail 3" class="custom-thumbnail"
+                                        onclick="openModal('images/textures/custom.jpg')">
                                 </div>
                             </div>
                             <div class="stroke3" style="margin-bottom: 1rem;"></div>
@@ -179,10 +174,12 @@
                                 <h4 class="btn-text-collapsible" data-translate="rest"></h4>
                             </button>
                             <div class="content-desc">
-                                <p>Uz mogućnost dogovora, pored ponuđenih paleta, nudimo personalizaciju boja i tekstura
-                                    prema vašim željama.</p>
+                                <p>Mogućnost personalizacije boja i tekstura.</p>
                                 <p>Svaki luster je ručno izrađen unikat, zbog čega može doći do odstupanja tekstura i
-                                    šara u odnosu na primere prikazane u katalogu.</p>
+                                    dimenzija u odnosu na primere prikazane u katalogu.</p>
+                                <p>Vreme izrade do 40 dana.</p>
+                                <p>Transport nije ukljucen u cenu.</p>
+                                <p>Preporucena sijalica za grlo E27 - LED Edison.</p>
                             </div>
                             <div class="stroke5" style="margin-bottom: 1rem;"></div>
                         </div>
@@ -234,7 +231,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="assets/js/preview-page.js"></script>
     <script>
-          function openModal(imageSrc) {
+        function openModal(imageSrc) {
             var modal = document.getElementById('custom-modal');
             var modalImage = document.getElementById('custom-modal-image');
             var figureImage = document.getElementById('figure-image');
