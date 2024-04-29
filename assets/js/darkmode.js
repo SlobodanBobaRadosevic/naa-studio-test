@@ -50,6 +50,6 @@ function getCookie(name) {
 }
 
 // Apply dark mode on page load
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", function() {
     applyDarkMode();
-};
+});
