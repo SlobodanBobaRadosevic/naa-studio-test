@@ -3760,7 +3760,7 @@ body #page-wrapper {
   text-transform: lowercase;
   top: 0;
   width: 100%;
-  z-index: 10001;
+  z-index: 99999999999;
 }
 
 #header > .logo {
