@@ -4817,12 +4817,6 @@ body.is-preload #banner .inner {
   transform: scale(1.5) translateY(-50px);
 }
 
-.imageContainer .dark {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .info-div {
   position: absolute;
   left: 50%;
@@ -5047,20 +5041,6 @@ h1 {
   100% {
     opacity: 1;
   }
-}
-
-.imageContainer .current.v1 {
-  animation: opacityCycle 10s infinite;
-  animation-delay: 7s;
-}
-
-.imageContainer .current.v2 {
-  animation: opacityCycle 10s infinite;
-  animation-delay: 4s;
-}
-
-.imageContainer .current.v3 {
-  animation: opacityCycle 10s infinite;
 }
 
 #page-wrapper {

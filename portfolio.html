@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>NAA Studio - Portfolio</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/dark-mode.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/portfolio.css" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="language.js"></script>
-  </head>
 
-  <body class="is-preload dark-mode">
-    <!-- Page wrapper -->
-    <div id="page-wrapper">
-      <!-- Header -->
-      <header id="header">
-        <span class="logo"
-          ><a href="index.html">NAA<span>studio</span></a></span
-        >
-        <button onclick="toggleDarkMode()" class="dark-mode-btn">
-          <span style="text-transform: uppercase;
+<head>
+  <title>NAA Studio - Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/dark-mode.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/portfolio.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="language.js"></script>
+</head>
+
+<body class="is-preload dark-mode">
+  <!-- Page wrapper -->
+  <div id="page-wrapper">
+    <!-- Header -->
+    <header id="header">
+      <span class="logo"><a href="index.html">NAA<span>studio</span></a></span>
+      <button onclick="toggleDarkMode()" class="dark-mode-btn">
+        <span style="text-transform: uppercase;
               display: inline-block;
               text-transform: uppercase;
               display: inline-block;
@@ -33,12 +29,8 @@
               left: 10px;
               color: #fff;
               z-index: 1;
-            "
-            class="zero-switch"
-            >O</span
-          >
-          <span
-            style="
+            " class="zero-switch">O</span>
+        <span style="
               text-transform: uppercase;
               display: inline-block;
               text-transform: uppercase;
@@ -47,469 +39,282 @@
               right: 10px;
               color: #333;
               z-index: 1;
-            "
-            class="one-switch"
-            >I</span
-          >
-          <div class="radio-control"></div>
-        </button>
-        <div class="custom-select" id="language-selector">
-          <div class="select-selected">
+            " class="one-switch">I</span>
+        <div class="radio-control"></div>
+      </button>
+      <div class="custom-select" id="language-selector">
+        <div class="select-selected">
+          <img src="images/srbflag.png" alt="SRB" /> SRB
+        </div>
+        <div class="select-items">
+          <div onclick="changeLanguage('srb')">
             <img src="images/srbflag.png" alt="SRB" /> SRB
           </div>
-          <div class="select-items">
-            <div onclick="changeLanguage('srb')">
-              <img src="images/srbflag.png" alt="SRB" /> SRB
-            </div>
-            <div onclick="changeLanguage('en')">
-              <img src="images/enflag.png" alt="EN" /> EN
-            </div>
-            <div onclick="changeLanguage('esp')">
-              <img src="images/espflag.png" alt="ESP" /> ESP
-            </div>
-            <!-- Add more options for other languages -->
+          <div onclick="changeLanguage('en')">
+            <img src="images/enflag.png" alt="EN" /> EN
           </div>
+          <div onclick="changeLanguage('esp')">
+            <img src="images/espflag.png" alt="ESP" /> ESP
+          </div>
+          <!-- Add more options for other languages -->
         </div>
-        <a class="menu-a" href="#menu"></a>
-      </header>
+      </div>
+      <a class="menu-a" href="#menu"></a>
+    </header>
 
-      <!-- Nav -->
-      <nav id="menu">
+    <!-- Nav -->
+    <nav id="menu">
+      <div class="inner">
+        <ul class="links">
+          <li><a href="index.html" data-translate="home">Home</a>
+            <div class="menu-of">
+              <img src="assets/css/navstroke.png" />
+            </div>
+          </li>
+          <li><a href="portfolio.html" data-translate="portfolio">Portfolio</a>
+            <div class="menu-of">
+              <img src="assets/css/navstroke.png" />
+            </div>
+          </li>
+          <li><a href="for-designers.html" data-translate="forDesigners">For Designers</a>
+            <div class="menu-of">
+              <img src="assets/css/navstroke.png" />
+            </div>
+          </li>
+          <li><a href="about-us.html" data-translate="aboutUs">About Us</a>
+            <div class="menu-of">
+              <img src="assets/css/navstroke.png" />
+            </div>
+          </li>
+          <li><a href="contact-us.html">Kontakt</a>
+            <div class="menu-of">
+              <img src="assets/css/navstroke.png" />
+            </div>
+          </li>
+        </ul>
+        <a class="close"><span>Close</span></a>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <section id="main" class="wrapper style1">
+      <div class="inner">
+        <header class="major special">
+          <h1 data-translate="ourCollection"></h1>
+        </header>
+      </div>
+      <div class="portfolio-wrapper style1 straight-wrapper">
         <div class="inner">
-          <ul class="links">
-            <li><a href="index.html" data-translate="home">Home</a>
-              <div class="menu-of">
-                <img src="assets/css/navstroke.png" />
+          <div class="gallery">
+            <a class="imageContainer" href="samuraj-preview.html" data-aos="zoom-in" data-aos-easing="ease-in-out"
+              data-aos-delay="200">
+              <img src="images/gallery/thumbs/pic099.png" alt="" />
+              <div class="subtext-preview">
+                <label>samuraj</label>
               </div>
-            </li>
-            <li><a href="portfolio.html" data-translate="portfolio">Portfolio</a>
-              <div class="menu-of">
-                <img src="assets/css/navstroke.png" />
+              <div class="info-div">
+                <h4>Samuraj</h4>
+                <p data-translate="samurajSubTitle"></p>
+                <button class="button next alt" data-translate="more"></button>
               </div>
-            </li>
-            <li><a href="for-designers.html" data-translate="forDesigners">For Designers</a>
-              <div class="menu-of">
-                <img src="assets/css/navstroke.png" />
+            </a>
+            <a class="imageContainer partial-border" href="kamen-preview.html" data-aos="zoom-in"
+              data-aos-easing="ease-in-out" data-aos-delay="300">
+              <img src="images/gallery/thumbs/pic033.png" alt="" />
+              <div class="subtext-preview">
+                <label>kamen</label>
               </div>
-            </li>
-            <li><a href="about-us.html" data-translate="aboutUs">About Us</a>
-              <div class="menu-of">
-                <img src="assets/css/navstroke.png" />
+              <div class="info-div">
+                <h4>Kamen</h4>
+                <p data-translate="kamenSubTitle"></p>
+                <button class="button next alt" data-translate="more"></button>
               </div>
-            </li>
-            <li><a href="contact-us.html">Kontakt</a>
-              <div class="menu-of">
-                <img src="assets/css/navstroke.png" />
-              </div>
-            </li>
-          </ul>
-          <a class="close"><span>Close</span></a>
-        </div>
-      </nav>
+            </a>
 
-      <!-- Main -->
-      <section id="main" class="wrapper style1">
+            <a class="imageContainer partial-border" href="pecina-preview.html" data-aos="zoom-in"
+              data-aos-easing="ease-in-out" data-aos-delay="200">
+              <img src="images/gallery/thumbs/pic088.png" alt="" />
+              <div class="subtext-preview">
+                <label>pećina</label>
+              </div>
+              <div class="info-div">
+                <h4>Pecina</h4>
+                <p data-translate="pecinaSubTitle"></p>
+                <button class="button next alt" data-translate="more"></button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-wrapper style1 straight-wrapper">
         <div class="inner">
-          <header class="major special">
-            <h1 data-translate="ourCollection"></h1>
-          </header>
-        </div>
-        <div class="portfolio-wrapper style1 straight-wrapper">
-          <div class="inner">
-            <div class="gallery">
-              <a
-                class="imageContainer"
-                href="samuraj-preview.html"
-                data-aos="zoom-in"
-                data-aos-easing="ease-in-out"
-                data-aos-delay="200"
-              >
-                <img
-                  class="dark"
-                  src="images/gallery/thumbs/pic099.png"
-                  alt=""
-                />
-                <img
-                  class="current v2"
-                  src="images/gallery/thumbs/pic099.png"
-                  alt=""
-                />
-                <div class="subtext-preview">
-                  <label>samuraj</label>
-                </div>
-                <div class="info-div">
-                  <h4>Samuraj</h4>
-                  <p data-translate="samurajSubTitle"></p>
-                  <button
-                    class="button next alt"
-                    data-translate="more"
-                  ></button>
-                </div>
-              </a>
-              <a
-                class="imageContainer partial-border"
-                href="kamen-preview.html"
-                data-aos="zoom-in"
-                data-aos-easing="ease-in-out"
-                data-aos-delay="300"
-              >
-                <img
-                  class="dark"
-                  src="images/gallery/thumbs/pic033.png"
-                  alt=""
-                />
-                <img
-                  class="current v1"
-                  src="images/gallery/thumbs/pic033.png"
-                  alt=""
-                />
-                <div class="subtext-preview">
-                  <label>kamen</label>
-                </div>
-                <div class="info-div">
-                  <h4>Kamen</h4>
-                  <p data-translate="kamenSubTitle"></p>
-                  <button
-                    class="button next alt"
-                    data-translate="more"
-                  ></button>
-                </div>
-              </a>
+          <div class="gallery">
+            <a class="imageContainer partial-border" data-aos="zoom-in" data-aos-easing="ease-in-out"
+              data-aos-delay="200" href="ideja-preview.html">
+              <img src="images/gallery/thumbs/pic011.png" alt="" />
+              <div class="subtext-preview">
+                <label>ideja</label>
+              </div>
+              <div class="info-div">
+                <h4>Ideja</h4>
+                <p data-translate="idejaSubTitle"></p>
+                <button class="button next alt" data-translate="more"></button>
+              </div>
+            </a>
 
-              <a
-                class="imageContainer partial-border"
-                href="pecina-preview.html"
-                data-aos="zoom-in"
-                data-aos-easing="ease-in-out"
-                data-aos-delay="200"
-              >
-                <img
-                  class="dark"
-                  src="images/gallery/thumbs/pic088.png"
-                  alt=""
-                />
-                <img
-                  class="current v3"
-                  src="images/gallery/thumbs/pic088.png"
-                  alt=""
-                />
-                <div class="subtext-preview">
-                  <label>pećina</label>
-                </div>
-                <div class="info-div">
-                  <h4>Pecina</h4>
-                  <p data-translate="pecinaSubTitle"></p>
-                  <button
-                    class="button next alt"
-                    data-translate="more"
-                  ></button>
-                </div>
-              </a>
-            </div>
+            <a class="imageContainer partial-border" data-aos="zoom-in" data-aos-easing="ease-in-out"
+              data-aos-delay="100" href="vulkan-preview.html">
+              <img src="images/gallery/thumbs/pic066.png" alt="" />
+              <div class="subtext-preview">
+                <label>vulkan</label>
+              </div>
+              <div class="info-div">
+                <h4>Vulkan</h4>
+                <p data-translate="vulkanSubTitle"></p>
+                <button class="button next alt" data-translate="more"></button>
+              </div>
+            </a>
+            <a class="imageContainer partial-border" data-aos="zoom-in" data-aos-easing="ease-in-out"
+              data-aos-delay="200" href="zir-preview.html">
+              <img src="images/gallery/thumbs/pic1010.png" alt="" />
+              <div class="subtext-preview">
+                <label>žir</label>
+              </div>
+              <div class="info-div">
+                <h4>Žir</h4>
+                <p data-translate="zirSubTitle"></p>
+                <button class="button next alt" data-translate="more"></button>
+              </div>
+            </a>
           </div>
         </div>
-
-        <div class="portfolio-wrapper style1 straight-wrapper">
-          <div class="inner">
-            <div class="gallery">
-              <a
-                class="imageContainer partial-border"
-                data-aos="zoom-in"
-                data-aos-easing="ease-in-out"
-                data-aos-delay="200"
-                href="ideja-preview.html"
-              >
-                <img
-                  class="dark"
-                  src="images/gallery/thumbs/pic011.png"
-                  alt=""
-                />
-                <img
-                  class="current v2"
-                  src="images/gallery/thumbs/pic011.png"
-                  alt=""
-                />
-                <div class="subtext-preview">
-                  <label>ideja</label>
-                </div>
-                <div class="info-div">
-                  <h4>Ideja</h4>
-                  <p data-translate="idejaSubTitle"></p>
-                  <button
-                    class="button next alt"
-                    data-translate="more"
-                  ></button>
-                </div>
-              </a>
-
-              <a
-                class="imageContainer partial-border"
-                data-aos="zoom-in"
-                data-aos-easing="ease-in-out"
-                data-aos-delay="100"
-                href="vulkan-preview.html"
-              >
-                <img
-                  class="dark"
-                  src="images/gallery/thumbs/pic066.png"
-                  alt=""
-                />
-                <img
-                  class="current v2"
-                  src="images/gallery/thumbs/pic066.png"
-                  alt=""
-                />
-                <div class="subtext-preview">
-                  <label>vulkan</label>
-                </div>
-                <div class="info-div">
-                  <h4>Vulkan</h4>
-                  <p data-translate="vulkanSubTitle"></p>
-                  <button
-                    class="button next alt"
-                    data-translate="more"
-                  ></button>
-                </div>
-              </a>
-              <a
-                class="imageContainer partial-border"
-                data-aos="zoom-in"
-                data-aos-easing="ease-in-out"
-                data-aos-delay="200"
-                href="zir-preview.html"
-              >
-                <img
-                  class="dark"
-                  src="images/gallery/thumbs/pic1010.png"
-                  alt=""
-                />
-                <img
-                  class="current v3"
-                  src="images/gallery/thumbs/pic1010.png"
-                  alt=""
-                />
-                <div class="subtext-preview">
-                  <label>žir</label>
-                </div>
-                <div class="info-div">
-                  <h4>Žir</h4>
-                  <p data-translate="zirSubTitle"></p>
-                  <button
-                    class="button next alt"
-                    data-translate="more"
-                  ></button>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-wrapper style1 straight-wrapper">
-          <div class="inner">
-            <div class="gallery">
-              <a
-                class="imageContainer"
-                href="puzla-preview.html"
-                data-aos="zoom-in"
-                data-aos-easing="ease-in-out"
-                data-aos-delay="300"
-              >
-                <img
-                  class="dark"
-                  src="images/gallery/thumbs/pic055.png"
-                  alt=""
-                />
-                <img
-                  class="current v1"
-                  src="images/gallery/thumbs/pic055.png"
-                  alt=""
-                />
-                <div class="subtext-preview">
-                  <label>puzla</label>
-                </div>
-                <div class="info-div">
-                  <h4>Puzla</h4>
-                  <p data-translate="puzlaSubTitle"></p>
-                  <button
-                    class="button next alt"
-                    data-translate="more"
-                  ></button>
-                </div>
-              </a>
-              <a
-                class="imageContainer partial-border"
-                data-aos="zoom-in"
-                data-aos-easing="ease-in-out"
-                data-aos-delay="200"
-                href="mesec-preview.html"
-              >
-                <img
-                  class="dark"
-                  src="images/gallery/thumbs/pic022.png"
-                  alt=""
-                />
-                <img
-                  class="current v1"
-                  src="images/gallery/thumbs/pic022.png"
-                  alt=""
-                />
-                <div class="subtext-preview">
-                  <label>mesec</label>
-                </div>
-                <div class="info-div">
-                  <h4>mesec</h4>
-                  <p data-translate="mesecSubTitle"></p>
-                  <button
-                    class="button next alt"
-                    data-translate="more"
-                  ></button>
-                </div>
-              </a>
-              <a
-                class="imageContainer"
-                href="x-preview.html"
-                data-aos="zoom-in"
-                data-aos-easing="ease-in-out"
-                data-aos-delay="300"
-              >
-                <img
-                  class="dark"
-                  src="images/gallery/thumbs/pic077.png"
-                  alt=""
-                />
-                <img
-                  class="current v3"
-                  src="images/gallery/thumbs/pic077.png"
-                  alt=""
-                />
-                <div class="subtext-preview">
-                  <label>x</label>
-                </div>
-                <div class="info-div">
-                  <h4>X</h4>
-                  <p data-translate="xSubTitle"></p>
-                  <button
-                    class="button next alt"
-                    data-translate="more"
-                  ></button>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-wrapper style1 last-gallery straight-wrapper">
-          <div class="inner">
-            <div class="gallery c-1">
-              <a
-                class="imageContainer"
-                style="margin-bottom: 200px !important"
-                href="mi-preview.html"
-                data-aos="zoom-in"
-                data-aos-easing="ease-in-out"
-                data-aos-delay="200"
-              >
-                <img
-                  class="dark"
-                  src="images/gallery/thumbs/pic044.png"
-                  alt=""
-                />
-                <img
-                  class="current v1"
-                  src="images/gallery/thumbs/pic044.png"
-                  alt=""
-                />
-                <div class="subtext-preview">
-                  <label>mi</label>
-                </div>
-                <div class="info-div">
-                  <h4>Mi</h4>
-                  <p data-translate="miSubTitle"></p>
-                  <button
-                    class="button next alt"
-                    data-translate="more"
-                  ></button>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Footer -->
-      <section
-        id="footer"
-        style="padding: 30px !important"
-        class="wrapper style2 mirror-t"
-      >
+      </div>
+      <div class="portfolio-wrapper style1 straight-wrapper">
         <div class="inner">
-          <div class="split">
-            <div class="content">
-              <header>
-                <h2 class="dark" data-translate="aboutUs"></h2>
-              </header>
-              <p data-translate="shortStory"></p>
-              <ul class="actions">
-                <li>
-                  <a
-                    href="about-us.html"
-                    class="button next alt dark"
-                    data-translate="fullStory"
-                  ></a>
-                </li>
-              </ul>
-            </div>
-            <ul class="contact-icons">
+          <div class="gallery">
+            <a class="imageContainer" href="puzla-preview.html" data-aos="zoom-in" data-aos-easing="ease-in-out"
+              data-aos-delay="300">
+              <img src="images/gallery/thumbs/pic055.png" alt="" />
+              <div class="subtext-preview">
+                <label>puzla</label>
+              </div>
+              <div class="info-div">
+                <h4>Puzla</h4>
+                <p data-translate="puzlaSubTitle"></p>
+                <button class="button next alt" data-translate="more"></button>
+              </div>
+            </a>
+            <a class="imageContainer partial-border" data-aos="zoom-in" data-aos-easing="ease-in-out"
+              data-aos-delay="200" href="mesec-preview.html">
+              <img src="images/gallery/thumbs/pic022.png" alt="" />
+              <div class="subtext-preview">
+                <label>mesec</label>
+              </div>
+              <div class="info-div">
+                <h4>mesec</h4>
+                <p data-translate="mesecSubTitle"></p>
+                <button class="button next alt" data-translate="more"></button>
+              </div>
+            </a>
+            <a class="imageContainer" href="x-preview.html" data-aos="zoom-in" data-aos-easing="ease-in-out"
+              data-aos-delay="300">
+              <img src="images/gallery/thumbs/pic077.png" alt="" />
+              <div class="subtext-preview">
+                <label>x</label>
+              </div>
+              <div class="info-div">
+                <h4>X</h4>
+                <p data-translate="xSubTitle"></p>
+                <button class="button next alt" data-translate="more"></button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-wrapper style1 last-gallery straight-wrapper">
+        <div class="inner">
+          <div class="gallery c-1">
+            <a class="imageContainer" style="margin-bottom: 200px !important" href="mi-preview.html" data-aos="zoom-in"
+              data-aos-easing="ease-in-out" data-aos-delay="200">
+              <img src="images/gallery/thumbs/pic044.png" alt="" />
+              <div class="subtext-preview">
+                <label>mi</label>
+              </div>
+              <div class="info-div">
+                <h4>Mi</h4>
+                <p data-translate="miSubTitle"></p>
+                <button class="button next alt" data-translate="more"></button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="footer" style="padding: 30px !important" class="wrapper style2 mirror-t">
+      <div class="inner">
+        <div class="split">
+          <div class="content">
+            <header>
+              <h2 class="dark" data-translate="aboutUs"></h2>
+            </header>
+            <p data-translate="shortStory"></p>
+            <ul class="actions">
               <li>
-                <a href="#" class="icon brands alt fa-twitter"
-                  ><span class="label">twitter.com/untitled</span></a
-                >
-              </li>
-              <li>
-                <a href="#" class="icon brands alt fa-facebook-f"
-                  ><span class="label">facebook.com/untitled</span></a
-                >
-              </li>
-              <li>
-                <a href="#" class="icon brands alt fa-instagram"
-                  ><span class="label">instagram.com/untitled</span></a
-                >
-              </li>
-              <li>
-                <a href="#" class="icon solid alt fa-envelope"
-                  ><span class="label">contact@untitled.tld</span></a
-                >
+                <a href="about-us.html" class="button next alt dark" data-translate="fullStory"></a>
               </li>
             </ul>
           </div>
+          <ul class="contact-icons">
+            <li>
+              <a href="#" class="icon brands alt fa-twitter"><span class="label">twitter.com/untitled</span></a>
+            </li>
+            <li>
+              <a href="#" class="icon brands alt fa-facebook-f"><span class="label">facebook.com/untitled</span></a>
+            </li>
+            <li>
+              <a href="#" class="icon brands alt fa-instagram"><span class="label">instagram.com/untitled</span></a>
+            </li>
+            <li>
+              <a href="#" class="icon solid alt fa-envelope"><span class="label">contact@untitled.tld</span></a>
+            </li>
+          </ul>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Copyright -->
-      <section class="wrapper style2 copyright">
-        <div class="inner" data-translate="allRights"></div>
-      </section>
-    </div>
+    <!-- Copyright -->
+    <section class="wrapper style2 copyright">
+      <div class="inner" data-translate="allRights"></div>
+    </section>
+  </div>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/jquery.selectorr.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/darkmode.js"></script>
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+  <script src="assets/js/jquery.min.js" defer></script>
+  <script src="assets/js/jquery.scrollex.min.js" defer></script>
+  <script src="assets/js/jquery.scrolly.min.js" defer></script>
+  <script src="assets/js/jquery.selectorr.min.js" defer></script>
+  <script src="assets/js/browser.min.js" defer></script>
+  <script src="assets/js/breakpoints.min.js" defer></script>
+  <script src="assets/js/util.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/darkmode.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
 
-    <script>
-      $(document).ready(function () {
-        AOS.init();
-      });
-      const toggleBtn = document.getElementById("toggleBtn");
-      const body = document.body;
+  <script>
+    $(document).ready(function () {
+      AOS.init();
+    });
+    const toggleBtn = document.getElementById("toggleBtn");
+    const body = document.body;
 
-      toggleBtn.addEventListener("click", function () {
-        body.classList.toggle("dark-mode");
-      });
-    </script>
-  </body>
+    toggleBtn.addEventListener("click", function () {
+      body.classList.toggle("dark-mode");
+    });
+  </script>
+</body>
+
 </html>

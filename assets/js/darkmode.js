@@ -52,4 +52,20 @@ function getCookie(name) {
 // Apply dark mode on page load
 document.addEventListener("DOMContentLoaded", function() {
     applyDarkMode();
+
+    const lazyImages = document.querySelectorAll('img[data-src]');
+      
+    const lazyLoad = function() {
+      lazyImages.forEach(function(img) {
+        if (img.getBoundingClientRect().top < window.innerHeight && img.getBoundingClientRect().bottom > 0) {
+          img.src = img.dataset.src;
+          img.removeAttribute('data-src');
+        }
+      });
+    };
+
+    lazyLoad();
+
+    window.addEventListener('scroll', lazyLoad);
+
 });
