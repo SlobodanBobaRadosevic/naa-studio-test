@@ -141,7 +141,7 @@
                                     <img src="images/gallery/thumbs/pic03.png" alt="#" />
                                 </div>
                                 <div class="text-right flex-btns">
-                                    <a id="kamenLink" href="download/Kamen.rar" download>
+                                    <a id="kamenLink" class="downloadLink" href="download/Kamen.rar" download>
                                         <button class="f-d-dl"><i class="fa fa-download" aria-hidden="true"></i> <span
                                                 data-translate="download">Preuzmi</span>
                                         </button>
@@ -160,7 +160,7 @@
                                     <img src="images/gallery/thumbs/pic02.png" alt="#" />
                                 </div>
                                 <div class="text-right flex-btns">
-                                    <a id="mesecLink" href="download/Mesec.rar" download>
+                                    <a id="mesecLink" class="downloadLink" href="download/Mesec.rar" download>
                                         <button class="f-d-dl"><i class="fa fa-download" aria-hidden="true"></i> <span
                                                 data-translate="download">Preuzmi</span>
                                         </button>
@@ -179,7 +179,7 @@
                                     <img src="images/gallery/thumbs/pic04.png" alt="#" />
                                 </div>
                                 <div class="text-right flex-btns">
-                                    <a id="miLink" href="download/MI.rar" download>
+                                    <a id="miLink" class="downloadLink" href="download/MI.rar" download>
                                         <button class="f-d-dl"><i class="fa fa-download" aria-hidden="true"></i> <span
                                                 data-translate="download">Preuzmi</span>
                                         </button>
@@ -198,7 +198,7 @@
                                     <img src="images/gallery/thumbs/pic08.png" alt="#" />
                                 </div>
                                 <div class="text-right flex-btns">
-                                    <a id="pecinaLink" href="download/Pecina.rar" download>
+                                    <a id="pecinaLink" class="downloadLink" href="download/Pecina.rar" download>
                                         <button class="f-d-dl"><i class="fa fa-download" aria-hidden="true"></i> <span
                                                 data-translate="download">Preuzmi</span>
                                         </button>
@@ -217,7 +217,7 @@
                                     <img src="images/gallery/thumbs/pic05.png" alt="#" />
                                 </div>
                                 <div class="text-right flex-btns">
-                                    <a id="puzlaLink" href="download/Puzla.rar" download>
+                                    <a id="puzlaLink" class="downloadLink" href="download/Puzla.rar" download>
                                         <button class="f-d-dl"><i class="fa fa-download" aria-hidden="true"></i> <span
                                                 data-translate="download">Preuzmi</span>
                                         </button>
@@ -236,7 +236,7 @@
                                     <img src="images/gallery/thumbs/pic09.png" alt="#" />
                                 </div>
                                 <div class="text-right flex-btns">
-                                    <a id="samurajLink" href="download/Samuraj.rar" download>
+                                    <a id="samurajLink" class="downloadLink" href="download/Samuraj.rar" download>
                                         <button class="f-d-dl"><i class="fa fa-download" aria-hidden="true"></i> <span
                                                 data-translate="download">Preuzmi</span>
                                         </button>
@@ -255,7 +255,7 @@
                                     <img src="images/gallery/thumbs/pic06.png" alt="#" />
                                 </div>
                                 <div class="text-right flex-btns">
-                                    <a id="vulkanLink" href="download/Vulkan.rar" download>
+                                    <a id="vulkanLink" class="downloadLink" href="download/Vulkan.rar" download>
                                         <button class="f-d-dl"><i class="fa fa-download" aria-hidden="true"></i> <span
                                                 data-translate="download">Preuzmi</span>
                                         </button>
@@ -274,7 +274,7 @@
                                     <img src="images/gallery/thumbs/pic07.png" alt="#" />
                                 </div>
                                 <div class="text-right flex-btns">
-                                    <a id="xLink" href="download/X.rar" download>
+                                    <a id="xLink" class="downloadLink" href="download/X.rar" download>
                                         <button class="f-d-dl"><i class="fa fa-download" aria-hidden="true"></i> <span
                                                 data-translate="download">Preuzmi</span>
                                         </button>
@@ -295,7 +295,7 @@
                                     <img src="images/gallery/thumbs/pic10.png" alt="#" />
                                 </div>
                                 <div class="text-right flex-btns">
-                                    <a id="zirLink" href="download/Zir.rar" download>
+                                    <a id="zirLink" class="downloadLink" href="download/Zir.rar" download>
                                         <button class="f-d-dl"><i class="fa fa-download" aria-hidden="true"></i> <span
                                                 data-translate="download">Preuzmi</span>
                                         </button>
@@ -326,31 +326,27 @@
             <div class="modal" onclick="event.stopPropagation()">
                 <h4 style="color: #121212">Preuzimanje 3d modela</h4>
                 <div>
-                    <form id="myForm" style="margin: 0;" action="https://formsubmit.co/dev.slobodan@gmail.com"
-                        method="POST">
+                    <form id="myForm" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="7acb16b4-7b83-4534-bcce-2f1b67f80798">
                         <div>
                             <fieldset class="formRow">
                                 <input type="hidden" name="Preuzimanje 3d modela">
                                 <div class="formRow--item">
                                     <label for="name" class="formRow--input-wrapper js-inputWrapper">
-                                        <input type="text" name="name" class="formRow--input js-input" id="name"
-                                            autocomplete="off" placeholder="&nbsp;" required />
+                                        <input type="text" name="name" class="formRow--input js-input"  autocomplete="off" placeholder="&nbsp;" required />
                                         <span class="placeholder" data-translate="name"
                                             style="text-transform: lowercase;"></span>
                                     </label>
                                 </div>
                                 <div class="formRow--item">
                                     <label for="email" class="formRow--input-wrapper js-inputWrapper">
-                                        <input type="email" name="email" class="formRow--input js-input" id="email"
-                                            autocomplete="off" placeholder="&nbsp;" required />
+                                        <input type="email" name="email" class="formRow--input js-input" autocomplete="off" placeholder="&nbsp;" required />
                                         <span class="placeholder" data-translate="email"
                                             style="text-transform: lowercase;"></span>
                                     </label>
                                 </div>
                             </fieldset>
-                            <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_next"
-                                value="https://naa-studio-dev.netlify.app/for-designers">
+                        <input type="hidden" name="redirect" value="https://naa-studio.com/for-designers.html">
                             <p style="font-size: 14px; margin: 0;">
                                 Vaše podatke koristimo isključivo u svrhu evidentiranja preuzimanja modela i za kontaktiranje u vezi potencijalne saradnje.
                                 <hr style="margin: 1rem 0;" />

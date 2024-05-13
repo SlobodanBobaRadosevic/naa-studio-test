@@ -5613,10 +5613,15 @@ button .fas {
 
   #previewItem {
     border-top: 2px solid #333;
+    justify-content: center;
   }
 
   .prev-btn {
     display: inline-block;
+  }
+
+  #previewItem {
+    padding-top: 25px;
   }
 }
 
@@ -6051,4 +6056,13 @@ html {
     padding-right: 45px;
     padding-left: 45px;
   }
+}
+
+
+#custom-modal .modal {
+  max-width: 90% !important;
+}
+
+#myForm {
+  margin-bottom: 0;
 }

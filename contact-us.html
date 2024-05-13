@@ -16,9 +16,9 @@
   <link rel="stylesheet" href="assets/css/carousel.css" />
   <link rel="stylesheet" href="assets/css/inputs.css" />
   <link rel="stylesheet" href="assets/css/dark-mode.css" />
-	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="images/favicon-64x64.png" />
-	<meta property="og:image" content="images/opengraph.png">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon-64x64.png" />
+  <meta property="og:image" content="images/opengraph.png">
   <script src="language.js"></script>
 </head>
 
@@ -101,40 +101,40 @@
     <div class="background-holder"></div>
     <section class="contact-holder">
       <div class="inner">
-        <form action="https://formsubmit.co/dev.slobodan@gmail.com" method="POST">
-          <div>
-            <fieldset class="formRow">
-              <div class="formRow--item">
-                <label for="name" class="formRow--input-wrapper js-inputWrapper">
-                  <input type="text" name="name" required class="formRow--input js-input" id="name" autocomplete="off"
-                    placeholder="&nbsp;" required />
-                  <span class="placeholder" data-translate="name" style="text-transform: lowercase;"></span>
-                </label>
-              </div>
-            </fieldset>
-            <fieldset class="formRow">
-              <div class="formRow--item">
-                <label for="email" class="formRow--input-wrapper js-inputWrapper">
-                  <input type="email" name="email" class="formRow--input js-input" id="email" autocomplete="off"
-                    placeholder="&nbsp;" required />
-                  <span class="placeholder" data-translate="email" style="text-transform: lowercase;"></span>
-                </label>
-              </div>
-            </fieldset>
-            <fieldset class="formRow">
-              <div class="formRow--item">
-                <label for="message" class="formRow--input-wrapper js-inputWrapper">
-                  <textarea type="text" name="message" class="formRow--input js-input" id="message" autocomplete="off"
-                    placeholder="&nbsp;" required></textarea>
-                  <span class="placeholder" data-translate="message" style="text-transform: lowercase;"></span>
-                </label>
-              </div>
-            </fieldset>
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://naa-studio-dev.netlify.app/thank-you.html">
-            <button type="submit" style="font-size: 14px;" class="button next alt dark"
-              data-translate="send">Send</button>
-          </div>
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+          <input type="hidden" name="access_key" value="7acb16b4-7b83-4534-bcce-2f1b67f80798">
+          <fieldset class="formRow">
+            <div class="formRow--item">
+              <label for="name" class="formRow--input-wrapper js-inputWrapper">
+                <input type="text" name="name" required class="formRow--input js-input" autocomplete="off"
+                  placeholder="&nbsp;" required />
+                <span class="placeholder" data-translate="name" style="text-transform: lowercase;"></span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="formRow">
+            <div class="formRow--item">
+              <label for="email" class="formRow--input-wrapper js-inputWrapper">
+                <input type="email" name="email" class="formRow--input js-input" autocomplete="off" placeholder="&nbsp;"
+                  required />
+                <span class="placeholder" data-translate="email" style="text-transform: lowercase;"></span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="formRow">
+            <div class="formRow--item">
+              <label for="message" class="formRow--input-wrapper js-inputWrapper">
+                <textarea type="text" name="message" class="formRow--input js-input" autocomplete="off"
+                  placeholder="&nbsp;" required></textarea>
+                <span class="placeholder" data-translate="message" style="text-transform: lowercase;"></span>
+              </label>
+            </div>
+          </fieldset>
+          <input type="hidden" name="redirect" value="https://naa-studio.com/thank-you.html">
+          <button type="submit" style="font-size: 14px;" class="button next alt dark"
+            data-translate="send">Send</button>
+
         </form>
       </div>
     </section>

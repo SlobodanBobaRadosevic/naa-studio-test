@@ -52,11 +52,9 @@
 
 	// Banner.
 	const videoSources = [
-		'pexels3.mp4',
-		'pexels5.mp4',
 		'pexels2.mp4',
-		'pexels4.mp4',
-		'pexels1.mp4'
+		'pexels3.mp4',
+		'pexels1.mp4',
 	  ];
 	
 	  // Get the video element

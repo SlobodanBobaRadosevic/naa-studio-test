@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // Definition of translations
   const translations = {
     srb: {
-      mainheading: "umetnost moderno tradicija",
+      mainheading: "umetnost modernost tradicija",
       mainDesc:
-        "Otkrijte čaroliju gline: gde se veština susreće sa kreativnošću i jedinstvenost se isprepliće sa svetlosnim elementima, stvarajući jedinstvene luster.",
+        "Otkrijte čaroliju gline: gde se veština susreće sa kreativnošću i jedinstvenost se prepliće sa svetlosnim elementima, stvarajući jedinstvene lustere.",
       portfolio: "Portfolio",
       allRights: "© NAA Studio. Sva prava zadržana.",
       aboutUs: "O nama",
