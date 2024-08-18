@@ -1,7 +1,7 @@
 .wrap {
   overflow: hidden;
-  border-bottom: 1px solid #ddd;
-  border-top: 1px solid #ddd;
+  /* border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd; */
   margin-bottom: 150px;
 }
 

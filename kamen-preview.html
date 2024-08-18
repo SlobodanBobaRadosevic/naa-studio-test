@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="assets/css/gallery.css" />
     <link rel="stylesheet" href="assets/css/preview.css" />
     <link rel="stylesheet" href="assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="assets/css/carousel.css" />
+    <link rel="stylesheet" href="assets/css/carouselpreview.css" />
 	<!-- Favicon -->
 	<link rel="icon" type="image/png" href="images/favicon-64x64.png" />
 	<meta property="og:image" content="images/opengraph.png">
@@ -266,6 +268,37 @@
             y = offsetY / zoomer.offsetHeight * 100
             zoomer.style.backgroundPosition = x + '% ' + y + '%';
         }
+        var carousel = $('.carousel');
+        var seats = $('.carousel-seat');
+
+        var next = function (el) {
+            if (el.next().length > 0) {
+                return el.next();
+            } else {
+                return seats.first();
+            }
+        };
+
+        var progress = function (e) {
+            var el = $('.is-ref').removeClass('is-ref');
+            var new_seat = next(el);
+
+            new_seat.addClass('is-ref').css('order', 1);
+            for (var i = 2, ref = seats.length; i <= ref; i++) {
+                new_seat = next(new_seat).css('order', i);
+                console.log(new_seat);
+            }
+
+            carousel.removeClass('is-set');
+
+            return setTimeout((function () {
+                return carousel.addClass('is-set');
+            }), 50);
+        };
+
+        window.setInterval(function () {
+            progress();
+        }, 2000);
     </script>
 </body>
 

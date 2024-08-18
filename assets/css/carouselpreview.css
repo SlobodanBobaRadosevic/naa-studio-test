@@ -1,0 +1,12 @@
+.carousel img {
+  filter: saturate(0);
+}
+
+.carousel-seat a:hover img {
+  filter: saturate(1);
+}
+
+.wrap {
+    margin-top: 50px;
+    margin-bottom: 50px !important;
+}
