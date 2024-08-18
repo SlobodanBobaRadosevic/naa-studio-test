@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
       colors: "boje",
       rest: "ostalo",
       kamenFullDesc1:
-        "Ovaj kuster je kreiran s ciljem da naglasi prirodnu autentičnost, nesavršenost oblika i čvrstinu koju svaki komad kamena poseduje. Kada ga pogledamo, vidimo više od običnog lustera - vidimo deo prirode, jedinstvenu i autentičnu u svom postojanju.",
+        "Ovaj luster je kreiran s ciljem da naglasi prirodnu autentičnost, nesavršenost oblika i čvrstinu koju svaki komad kamena poseduje. Kada ga pogledamo, vidimo više od običnog lustera - vidimo deo prirode, jedinstvenu i autentičnu u svom postojanju.",
       kamenFullDesc2:
         "Inspirisani unikatnošću kamena, dizajn ovog lustera bazira se na njegovoj autentičnosti, čineći svaki luster jedinstvenim poput kamena koji nas nadahnjuje. Svaki detalj ovog lustera pažljivo je oblikovan kako bi istakao nepravilnosti i jedinstvenost prirodnog kamena. Dok smo oblikovali svaki njegov deo, osećali smo kao da smo deo prirode, kao da zajedno stvaramo nešto što odražava lepotu i snagu prirodnog sveta.",
       kamenFullDesc3:
