@@ -1,8 +1,8 @@
-.carousel img {
+.carousel.bw-img img {
   filter: saturate(0);
 }
 
-.carousel-seat a:hover img {
+.carousel.bw-img img:hover {
   filter: saturate(1);
 }
 

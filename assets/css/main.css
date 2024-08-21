@@ -2021,6 +2021,13 @@ button.next,
   padding-right: 4.5rem;
 }
 
+.next.flickity-button, 
+.previous.flickity-button {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  color: #333 !important;
+}
+
 input[type="submit"].next.fit,
 input[type="reset"].next.fit,
 input[type="button"].next.fit,
@@ -2045,6 +2052,10 @@ button.next:after,
   right: 1.5rem;
   top: 0;
   width: 1.25rem;
+}
+
+.next.flickity-button:after {
+  display: none !important;
 }
 
 input[type="submit"].disabled,
@@ -4782,6 +4793,7 @@ body.is-preload #banner .inner {
 .copyright {
   color: #333;
   text-align: center;
+  font-size: 14px !important;
 }
 
 .c-1 {
@@ -6065,4 +6077,13 @@ html {
 
 #myForm {
   margin-bottom: 0;
+}
+
+.dark-mode .contact-holder span {
+  color: #333;
+}
+
+.no-bg-wrapper {
+  background-color: transparent !important;
+  opacity: 0.5;
 }

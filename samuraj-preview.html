@@ -17,10 +17,11 @@
     <link rel="stylesheet" href="assets/css/dark-mode.css" />
     <link rel="stylesheet" href="assets/css/carousel.css" />
     <link rel="stylesheet" href="assets/css/carouselpreview.css" />
-	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="images/favicon-64x64.png" />
-	<meta property="og:image" content="images/opengraph.png">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon-64x64.png" />
+    <meta property="og:image" content="images/opengraph.png">
     <script src="language.js"></script>
+    <link rel="stylesheet" href="flick.css" />
 
 </head>
 
@@ -41,12 +42,8 @@
                     left: 10px;
                     color: #fff;
                     z-index: 1;
-                  "
-                  class="zero-switch"
-                  >O</span
-                >
-                <span
-                  style="
+                  " class="zero-switch">O</span>
+                <span style="
                     text-transform: uppercase;
                     display: inline-block;
                     text-transform: uppercase;
@@ -55,20 +52,19 @@
                     right: 10px;
                     color: #333;
                     z-index: 1;
-                  "
-                  class="one-switch"
-                  >I</span
-                >
+                  " class="one-switch">I</span>
                 <div class="radio-control"></div>
-              </button>
+            </button>
             <div class="custom-select" id="language-selector">
                 <div class="select-selected">
                     <img src="images/srbflag.png" alt="SRB" loading="lazy"> SRB
                 </div>
                 <div class="select-items">
-                    <div onclick="changeLanguage('srb')"><img src="images/srbflag.png" alt="SRB" loading="lazy"> SRB</div>
+                    <div onclick="changeLanguage('srb')"><img src="images/srbflag.png" alt="SRB" loading="lazy"> SRB
+                    </div>
                     <div onclick="changeLanguage('en')"><img src="images/enflag.png" alt="EN" loading="lazy"> EN</div>
-                    <div onclick="changeLanguage('esp')"><img src="images/espflag.png" alt="ESP" loading="lazy"> ESP</div>
+                    <div onclick="changeLanguage('esp')"><img src="images/espflag.png" alt="ESP" loading="lazy"> ESP
+                    </div>
                     <!-- Add more options for other languages -->
                 </div>
             </div>
@@ -84,37 +80,37 @@
         </div>
         <!-- Nav -->
         <nav id="menu">
-			<div class="inner">
-				<ul class="links">
-					<li><a href="index.html" data-translate="home">Home</a>
-						<div class="menu-of">
-							<img src="assets/css/navstroke.png" loading="lazy" />
-						</div>
-					</li>
-					<li><a href="portfolio.html" data-translate="portfolio">Portfolio</a>
-						<div class="menu-of">
-							<img src="assets/css/navstroke.png" loading="lazy" />
-						</div>
-					</li>
-					<li><a href="for-designers.html" data-translate="forDesigners">For Designers</a>
-						<div class="menu-of">
-							<img src="assets/css/navstroke.png" loading="lazy" />
-						</div>
-					</li>
-					<li><a href="about-us.html" data-translate="aboutUs">About Us</a>
-						<div class="menu-of">
-							<img src="assets/css/navstroke.png" loading="lazy" />
-						</div>
-					</li>
-					<li><a href="contact-us.html" data-translate="contact">Kontakt</a>
-						<div class="menu-of">
-							<img src="assets/css/navstroke.png" />
-						</div>
-					</li>
-				</ul>
-				<a class="close"><span>Close</span></a>
-			</div>
-		</nav>
+            <div class="inner">
+                <ul class="links">
+                    <li><a href="index.html" data-translate="home">Home</a>
+                        <div class="menu-of">
+                            <img src="assets/css/navstroke.png" loading="lazy" />
+                        </div>
+                    </li>
+                    <li><a href="portfolio.html" data-translate="portfolio">Portfolio</a>
+                        <div class="menu-of">
+                            <img src="assets/css/navstroke.png" loading="lazy" />
+                        </div>
+                    </li>
+                    <li><a href="for-designers.html" data-translate="forDesigners">For Designers</a>
+                        <div class="menu-of">
+                            <img src="assets/css/navstroke.png" loading="lazy" />
+                        </div>
+                    </li>
+                    <li><a href="about-us.html" data-translate="aboutUs">About Us</a>
+                        <div class="menu-of">
+                            <img src="assets/css/navstroke.png" loading="lazy" />
+                        </div>
+                    </li>
+                    <li><a href="contact-us.html" data-translate="contact">Kontakt</a>
+                        <div class="menu-of">
+                            <img src="assets/css/navstroke.png" />
+                        </div>
+                    </li>
+                </ul>
+                <a class="close"><span>Close</span></a>
+            </div>
+        </nav>
         <!-- Main -->
         <section id="main" class="wrapper style1">
             <div class="inner">
@@ -129,26 +125,20 @@
                 </div>
             </div>
         </section>
-        <div data-aos="fade-right" data-aos-delay="400" class="slider">
-            <div class="slide">
-                <img src="images/gallery/Samuraj/slide01.jpg" alt="" loading="lazy" />
-            </div>
-            <div class="slide">
-                <img src="images/gallery/Samuraj/slide02.jpg" alt="" loading="lazy" />
-            </div>
-            <div class="slide">
-                <img src="images/gallery/Samuraj/slide03.jpg" alt="" loading="lazy" />
-            </div>
-
-            <button class="btn-slide prev"><i class="fas fa-3x fa-chevron-circle-left"></i></button>
-            <button class="btn-slide nextt"><i class="fas fa-3x fa-chevron-circle-right"></i></button>
-            <div class="dots-container">
-                <span class="dot active" data-slide="0"></span>
-                <span class="dot" data-slide="1"></span>
-                <span class="dot" data-slide="2"></span>
+        <div data-aos="fade-right" data-aos-delay="400">
+           
+            <div class="carousel js-flickity full-width-gallery"
+                data-flickity-options='{ "wrapAround": true, "pauseAutoPlayOnHover": true, "imagesLoaded": true}'>
+                <img src="images/gallery/Samuraj/slide01.jpg"
+                    alt="tulip" />
+                <img src="images/gallery/Samuraj/slide02.jpg"
+                    alt="tulip" />
+                <img src="images/gallery/Samuraj/slide03.jpg"
+                    alt="grapes" />
             </div>
         </div>
         <div class="wrapper straight-wrapper style1">
+
             <div class="inner m-b-100">
                 <h1 style="color: #333" class="spec-heading" data-aos="fade-right" data-aos-delay="600"
                     data-translate="specification"></h1>
@@ -219,92 +209,23 @@
                 </div>
             </div>
         </div>
-        <div class='wrap'>
-            <ul class='carousel is-set'>
-                <li class='carousel-seat'>
-                    <a href="samuraj-preview.html">
-                        <img src="images/gallery/thumbs/pic099.png">
-                        <div class="subtext-preview">
-                            <label>samuraj</label>
-                        </div>
-                    </a>
-                </li>
-                <li class='carousel-seat'>
-                    <a href="kamen-preview.html">
-                        <img src="images/gallery/thumbs/pic033.png">
-                        <div class="subtext-preview">
-                            <label>kamen</label>
-                        </div>
-                    </a>
-                </li>
-                <li class='carousel-seat'>
-                    <a href="pecina-preview.html">
-                        <img src="images/gallery/thumbs/pic088.png">
-                        <div class="subtext-preview">
-                            <label>pećina</label>
-                        </div>
-                    </a>
-                </li>
-                <li class='carousel-seat'>
-                    <a href="ideja-preview.html">
-                        <img src="images/gallery/thumbs/pic011.png">
-                        <div class="subtext-preview">
-                            <label>ideja</label>
-                        </div>
-                    </a>
-                </li>
-                <li class='carousel-seat'>
-                    <a href="vulkan-preview.html">
-                        <img src="images/gallery/thumbs/pic066.png">
-                        <div class="subtext-preview">
-                            <label>vulkan</label>
-                        </div>
-                    </a>
-                </li>
-                <li class='carousel-seat'>
-                    <a href="zir-preview.html">
-                        <img src="images/gallery/thumbs/pic1010.png">
-                        <div class="subtext-preview">
-                            <label>žir</label>
-                        </div>
-                    </a>
-                </li>
-                <li class='carousel-seat'>
-                    <a href="puzla-preview.html">
-                        <img src="images/gallery/thumbs/pic055.png">
-                        <div class="subtext-preview">
-                            <label>puzla</label>
-                        </div>
-                    </a>
-                </li>
-                <li class='carousel-seat'>
-                    <a href="mesec-preview.html">
-                        <img src="images/gallery/thumbs/pic022.png">
-                        <div class="subtext-preview">
-                            <label>mesec</label>
-                        </div>
-                    </a>
-                </li>
-                <li class='carousel-seat'>
-                    <a href="x-preview.html">
-                        <img src="images/gallery/thumbs/pic077.png">
-                        <div class="subtext-preview">
-                            <label>x</label>
-                        </div>
-                    </a>
-                </li>
-                <li class='carousel-seat' style="overflow: hidden;">
-                    <a href="mi-preview.html">
-                        <img style="max-width: 300% !important; width: 300% !important; margin-left: -86%;"
-                            src="images/gallery/thumbs/pic044.png">
-                        <div class="subtext-preview">
-                            <label>mi</label>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
 
+        <div class="carousel js-flickity bw-img"
+            data-flickity-options='{ "lazyLoad": 3, "wrapAround": true, "initialIndex": 2, "pauseAutoPlayOnHover": true }'>
+            <img class="carousel-cell-image" data-flickity-lazyload="images/gallery/thumbs/pic099.png" alt="tulip" />
+            <img class="carousel-cell-image" data-flickity-lazyload="images/gallery/thumbs/pic033.png" alt="tulip" />
+            <img class="carousel-cell-image" data-flickity-lazyload="images/gallery/thumbs/pic088.png" alt="grapes" />
+            <img class="carousel-cell-image" data-flickity-lazyload="images/gallery/thumbs/pic011.png"
+                alt="raspberries" />
+            <img class="carousel-cell-image" data-flickity-lazyload="images/gallery/thumbs/pic066.png" alt="wolf" />
+            <img class="carousel-cell-image" data-flickity-lazyload="images/gallery/thumbs/pic1010.png" alt="shore" />
+            <img class="carousel-cell-image" data-flickity-lazyload="images/gallery/thumbs/pic055.png"
+                alt="leaf droplets" />
+            <img class="carousel-cell-image" data-flickity-lazyload="images/gallery/thumbs/pic022.png" alt="gulls" />
+            <img class="carousel-cell-image" data-flickity-lazyload="images/gallery/thumbs/pic077.png"
+                alt="touch screen" />
+            <img class="carousel-cell-image" data-flickity-lazyload="images/gallery/thumbs/pic044w.png" alt="van" />
+        </div>
         <section class="wrapper style2 copyright">
             <div class="inner" data-translate="allRights"></div>
         </section>
@@ -364,38 +285,47 @@
             y = offsetY / zoomer.offsetHeight * 100
             zoomer.style.backgroundPosition = x + '% ' + y + '%';
         }
-        var carousel = $('.carousel');
-        var seats = $('.carousel-seat');
 
-        var next = function (el) {
-            if (el.next().length > 0) {
-                return el.next();
-            } else {
-                return seats.first();
+        let scriptAppended = false;
+        window.addEventListener("scroll", function () {
+
+            if (!scriptAppended) {
+                const script = document.createElement('script');
+                script.src = 'flick.js'; // URL of the external script
+                script.defer = true; // Set the defer attribute if needed
+
+                // Append the new script element to the body
+                document.body.appendChild(script);
+
+                // Set the flag to true so the script won't be appended again
+                scriptAppended = true;
             }
-        };
+        });
+        let autoplayInterval; // To store the interval ID
 
-        var progress = function (e) {
-            var el = $('.is-ref').removeClass('is-ref');
-            var new_seat = next(el);
+        function startAutoplay() {
+            autoplayInterval = window.setInterval(function () {
+                $('.flickity-button.flickity-prev-next-button.next').click();
+            }, 2000);
+        }
 
-            new_seat.addClass('is-ref').css('order', 1);
-            for (var i = 2, ref = seats.length; i <= ref; i++) {
-                new_seat = next(new_seat).css('order', i);
-                console.log(new_seat);
-            }
+        function stopAutoplay() {
+            window.clearInterval(autoplayInterval);
+        }
 
-            carousel.removeClass('is-set');
+        // Start autoplay initially
+        startAutoplay();
 
-            return setTimeout((function () {
-                return carousel.addClass('is-set');
-            }), 50);
-        };
+        // Event listeners for mouse enter and leave
+        $('.carousel').on('mouseenter', function () {
+            stopAutoplay();
+        });
 
-        window.setInterval(function () {
-            progress();
-        }, 2000);
+        $('.carousel').on('mouseleave', function () {
+            startAutoplay();
+        });
     </script>
+
 </body>
 
 </html>
