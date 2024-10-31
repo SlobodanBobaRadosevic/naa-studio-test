@@ -2021,7 +2021,7 @@ button.next,
   padding-right: 4.5rem;
 }
 
-.next.flickity-button, 
+.next.flickity-button,
 .previous.flickity-button {
   padding-right: 0 !important;
   padding-left: 0 !important;
@@ -4688,7 +4688,8 @@ body.is-preload #banner .bg {
   }
 }
 .about-us-footer {
-  width: 100%; margin-left: 75px;
+  width: 100%;
+  margin-left: 75px;
 }
 @media screen and (max-width: 768px) {
   #banner h1 {
@@ -4707,7 +4708,6 @@ body.is-preload #banner .bg {
     justify-content: center;
     display: flex;
   }
- 
 }
 
 @media screen and (max-width: 736px) {
@@ -5955,7 +5955,13 @@ html {
     rgba(80, 80, 80, 0.2),
     rgba(216, 216, 216, 0.2)
   ); */
-  background: linear-gradient(-45deg, rgb(0, 0, 0), rgba(33, 33, 33, 0.59), rgba(49, 20, 20, 0.286), rgba(44, 34, 22, 0.692));
+  background: linear-gradient(
+    -45deg,
+    rgb(0, 0, 0),
+    rgba(33, 33, 33, 0.59),
+    rgba(49, 20, 20, 0.286),
+    rgba(44, 34, 22, 0.692)
+  );
   background-size: 200% 200%;
   animation: gradient-animation 15s ease infinite;
   height: 100%;
@@ -6070,7 +6076,6 @@ html {
   }
 }
 
-
 #custom-modal .modal {
   max-width: 90% !important;
 }
@@ -6086,4 +6091,27 @@ html {
 .no-bg-wrapper {
   background-color: transparent !important;
   opacity: 0.5;
+}
+
+.info-email-show {
+  display: none;
+}
+
+.email-show:active .info-email-show,
+.email-show:focus .info-email-show,
+.email-show:hover .info-email-show {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  top: -80px;
+  padding-bottom: 35px;
+}
+
+.info-email-show  div {
+  white-space: pre;
+  padding: 15px 25px;
+  border-radius: 65px;
+  background-color: #000000;
+  color: #fff;
 }

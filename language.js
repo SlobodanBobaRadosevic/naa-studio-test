@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     srb: {
       mainheading: "umetnost modernost tradicija",
       mainDesc:
-        "Otkrijte čaroliju gline: gde se veština susreće sa kreativnošću i jedinstvenost se prepliće sa svetlosnim elementima, stvarajući jedinstvene lustere.",
+        "Otkrijte čaroliju gline gde se preplice veština i kreativnost, stvarajući jedinstvene lustere.",
       portfolio: "Portfolio",
       allRights: "© NAA Studio. Sva prava zadržana.",
       aboutUs: "O nama",

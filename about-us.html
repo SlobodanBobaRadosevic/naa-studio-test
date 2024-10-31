@@ -15,10 +15,11 @@
     <link rel="stylesheet" href="assets/css/gallery.css" />
     <link rel="stylesheet" href="assets/css/carousel.css" />
     <link rel="stylesheet" href="assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="assets/css/carouselpreview.css" />
     <link rel="stylesheet" href="flick.css" />
-	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="images/favicon-64x64.png" />
-	<meta property="og:image" content="images/opengraph.png">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon-64x64.png" />
+    <meta property="og:image" content="images/opengraph.png">
     <script src="language.js"></script>
     <script src="flick.js" defer></script>
 </head>
@@ -40,12 +41,8 @@
                     left: 10px;
                     color: #fff;
                     z-index: 1;
-                  "
-                  class="zero-switch"
-                  >O</span
-                >
-                <span
-                  style="
+                  " class="zero-switch">O</span>
+                <span style="
                     text-transform: uppercase;
                     display: inline-block;
                     text-transform: uppercase;
@@ -54,12 +51,9 @@
                     right: 10px;
                     color: #333;
                     z-index: 1;
-                  "
-                  class="one-switch"
-                  >I</span
-                >
+                  " class="one-switch">I</span>
                 <div class="radio-control"></div>
-              </button>
+            </button>
             <div class="custom-select" id="language-selector">
                 <div class="select-selected">
                     <img src="images/srbflag.png" alt="SRB"> SRB
@@ -75,37 +69,37 @@
         </header>
         <!-- Nav -->
         <nav id="menu">
-			<div class="inner">
-				<ul class="links">
-					<li><a href="index.html" data-translate="home">Home</a>
-						<div class="menu-of">
-							<img src="assets/css/navstroke.png" />
-						</div>
-					</li>
-					<li><a href="portfolio.html" data-translate="portfolio">Portfolio</a>
-						<div class="menu-of">
-							<img src="assets/css/navstroke.png" />
-						</div>
-					</li>
-					<li><a href="for-designers.html" data-translate="forDesigners">For Designers</a>
-						<div class="menu-of">
-							<img src="assets/css/navstroke.png" />
-						</div>
-					</li>
-					<li><a href="about-us.html" data-translate="aboutUs">About Us</a>
-						<div class="menu-of">
-							<img src="assets/css/navstroke.png" />
-						</div>
-					</li>
-					<li><a href="contact-us.html" data-translate="contact">Kontakt</a>
-						<div class="menu-of">
-							<img src="assets/css/navstroke.png" />
-						</div>
-					</li>
-				</ul>
-				<a class="close"><span>Close</span></a>
-			</div>
-		</nav>
+            <div class="inner">
+                <ul class="links">
+                    <li><a href="index.html" data-translate="home">Home</a>
+                        <div class="menu-of">
+                            <img src="assets/css/navstroke.png" />
+                        </div>
+                    </li>
+                    <li><a href="portfolio.html" data-translate="portfolio">Portfolio</a>
+                        <div class="menu-of">
+                            <img src="assets/css/navstroke.png" />
+                        </div>
+                    </li>
+                    <li><a href="for-designers.html" data-translate="forDesigners">For Designers</a>
+                        <div class="menu-of">
+                            <img src="assets/css/navstroke.png" />
+                        </div>
+                    </li>
+                    <li><a href="about-us.html" data-translate="aboutUs">About Us</a>
+                        <div class="menu-of">
+                            <img src="assets/css/navstroke.png" />
+                        </div>
+                    </li>
+                    <li><a href="contact-us.html" data-translate="contact">Kontakt</a>
+                        <div class="menu-of">
+                            <img src="assets/css/navstroke.png" />
+                        </div>
+                    </li>
+                </ul>
+                <a class="close"><span>Close</span></a>
+            </div>
+        </nav>
         <!-- Main -->
         <section id="main" class="wrapper style1">
             <div class="inner">
@@ -165,20 +159,28 @@
                 </p>
             </div>
         </section>
-        <div class="carousel js-flickity" data-flickity-options='{ "lazyLoad": 3, "wrapAround": true, "initialIndex": 2, "autoPlay": 1500, "pauseAutoPlayOnHover": true }'>
-            <img class="carousel-cell-image" data-flickity-lazyload="images/gallery/thumbs/pic099.png" alt="tulip" />
-            <img class="carousel-cell-image" data-flickity-lazyload="images/gallery/thumbs/pic033.png" alt="tulip" />
-            <img class="carousel-cell-image" data-flickity-lazyload="images/gallery/thumbs/pic088.png" alt="grapes" />
-            <img class="carousel-cell-image" data-flickity-lazyload="images/gallery/thumbs/pic011.png"
-                alt="raspberries" />
-            <img class="carousel-cell-image" data-flickity-lazyload="images/gallery/thumbs/pic066.png" alt="wolf" />
-            <img class="carousel-cell-image" data-flickity-lazyload="images/gallery/thumbs/pic1010.png" alt="shore" />
-            <img class="carousel-cell-image" data-flickity-lazyload="images/gallery/thumbs/pic055.png"
-                alt="leaf droplets" />
-            <img class="carousel-cell-image" data-flickity-lazyload="images/gallery/thumbs/pic022.png" alt="gulls" />
-            <img class="carousel-cell-image" data-flickity-lazyload="images/gallery/thumbs/pic077.png"
-                alt="touch screen" />
-            <img class="carousel-cell-image" data-flickity-lazyload="images/gallery/thumbs/pic044w.png" alt="van" />
+        <div class="carousel js-flickity bw-img"
+            data-flickity-options='{ "lazyLoad": 3, "wrapAround": true, "initialIndex": 2, "autoPlay": 1500, "pauseAutoPlayOnHover": true }'>
+            <a href="samuraj-preview.html"><img class="carousel-cell-image"
+                    data-flickity-lazyload="images/gallery/thumbs/pic099.png" alt="tulip" /></a>
+            <a href="kamen-preview.html"><img class="carousel-cell-image"
+                    data-flickity-lazyload="images/gallery/thumbs/pic033.png" alt="tulip" /></a>
+            <a href="pecina-preview.html"><img class="carousel-cell-image"
+                    data-flickity-lazyload="images/gallery/thumbs/pic088.png" alt="grapes" /></a>
+            <a href="ideja-preview.html"><img class="carousel-cell-image"
+                    data-flickity-lazyload="images/gallery/thumbs/pic011.png" alt="raspberries" /></a>
+            <a href="vulkan-preview.html"><img class="carousel-cell-image"
+                    data-flickity-lazyload="images/gallery/thumbs/pic066.png" alt="wolf" /></a>
+            <a href="zir-preview.html"><img class="carousel-cell-image"
+                    data-flickity-lazyload="images/gallery/thumbs/pic1010.png" alt="shore" /></a>
+            <a href="puzla-preview.html"><img class="carousel-cell-image"
+                    data-flickity-lazyload="images/gallery/thumbs/pic055.png" alt="leaf droplets" /></a>
+            <a href="mesec-preview.html"><img class="carousel-cell-image"
+                    data-flickity-lazyload="images/gallery/thumbs/pic022.png" alt="gulls" /></a>
+            <a href="x-preview.html"><img class="carousel-cell-image"
+                    data-flickity-lazyload="images/gallery/thumbs/pic077.png" alt="touch screen" /></a>
+            <a href="mi-preview.html"><img class="carousel-cell-image"
+                    data-flickity-lazyload="images/gallery/thumbs/pic044w.png" alt="van" /></a>
         </div>
 
         <!-- Copyright -->
@@ -197,7 +199,7 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/typing-animation.js"></script>
     <script src="assets/js/darkmode.js"></script>
-   
+
 </body>
 
 </html>

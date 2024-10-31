@@ -6,7 +6,13 @@
   filter: saturate(1);
 }
 
+@media screen and (max-width: 900px) {
+  .carousel.bw-img img {
+    filter: saturate(1) !important;
+  }
+}
+
 .wrap {
-    margin-top: 50px;
-    margin-bottom: 50px !important;
+  margin-top: 50px;
+  margin-bottom: 50px !important;
 }
